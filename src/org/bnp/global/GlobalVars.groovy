@@ -49,7 +49,7 @@ class GlobalVars {
                 }else{
                     println("Error  cannot execute TAB_MODE in environment  Dev or Qualif  " )
                     println("execute TAB_MODE available only environment  Prod  " )
-                    System.exit(0)
+//                    System.exit(0)
 
                 }
 
