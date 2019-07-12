@@ -26,34 +26,12 @@ def call(String pipline) {
             globalVars = new GlobalVars()
             def mode = "${params.MODE}"
             def action = "${params.ACTION}"
-            def gitUrl = scm.getUserRemoteConfigs()[0].getUrl().toString()
-            def isProd = gitUrl.contains('france')
-
-
-//            properties ([
-//                    parameters([
-//                             string(name: 'RUN_ID', description: 'get run_id of model'),
-//                             choice(
-//                                     choices: ['PACKAGE' , 'DELIVER_OOZIE', 'DELIVER_LOCAL', 'DELIVER_API' ],
-//                                     description: '',
-//                                     name: 'ACTION'
-//                             ),
-//
-//                             choice(
-//                                     choices: ['PROD_MODE' , 'TAB_MODE' ],
-//                                     description: 'Choosing the  execution mode',
-//                                     name: 'MODE'
-//                             )
-//
-//
-//                    ])
-//            ])
-
-            println(" scmUrl =====>"+gitUrl)
+            def gitUrl = scm.getUserRemoteConfigs()[0].getUrl()
 
             def slave_labl = globalVars.getSlave(mode , action, gitUrl)
 
             println(" call =====>"+slave_labl)
+            println(" scmUrl =====>"+gitUrl)
 
 
         }
@@ -71,24 +49,24 @@ def call(String pipline) {
 
 
 
-//            parameters {
-//                string(name: 'RUN_ID', description: 'get run_id of model')
-//                //string(name: 'USER_ID',description: 'get user_id')
-//                //string(name: 'URL_GIT',defaultValue:'master',  description: 'get url_git')
-//                //gitParameter branchFilter: 'origin/(.*)', defaultValue: 'master', name: 'BRANCH', type: 'PT_BRANCH'
-//                choice(
-//                        choices: ['PACKAGE' , 'DELIVER_OOZIE', 'DELIVER_LOCAL', 'DELIVER_API' ],
-//                        description: '',
-//                        name: 'ACTION'
-//                )
-//
-//                choice(
-//                        choices: ['PROD_MODE' , 'TAB_MODE' ],
-//                        description: 'Choosing the  execution mode',
-//                        name: 'MODE'
-//                )
-//
-//            }
+            parameters {
+                string(name: 'RUN_ID', description: 'get run_id of model')
+                //string(name: 'USER_ID',description: 'get user_id')
+                //string(name: 'URL_GIT',defaultValue:'master',  description: 'get url_git')
+                //gitParameter branchFilter: 'origin/(.*)', defaultValue: 'master', name: 'BRANCH', type: 'PT_BRANCH'
+                choice(
+                        choices: ['PACKAGE' , 'DELIVER_OOZIE', 'DELIVER_LOCAL', 'DELIVER_API' ],
+                        description: '',
+                        name: 'ACTION'
+                )
+
+                choice(
+                        choices: ['PROD_MODE' , 'TAB_MODE' ],
+                        description: 'Choosing the  execution mode',
+                        name: 'MODE'
+                )
+
+            }
 
 
             stages {
