@@ -25,67 +25,67 @@ class GlobalVars {
         def isDev = gitUrl.contains('dev')
         def slave_label = ''
 
-//
-//
-//
-//        if (isTab ) {
-////            if (! isProd ) {
-////                println("Error  cannot execute TAB_MODE in environment  Dev or Qualif  " )
-////                println("execute TAB_MODE available only environment  Prod  " )
-////                System.exit(0)
-////            }
-//
-//
-//            if (isPackage) {
-//                slave_label = node_sa_tab
-//
-//                if (! isProd){
-//                    slave_label = node_sa
-//                }
-//
-//            } else {
-//                slave_label = node_se_tab
-//                if (! isProd){
-//                    slave_label = node_se
-//                }
-//            }
-//
-//
-//        } else {
-//
-//            if ((node_se.isEmpty() && isDeliverLocal) || (node_se.isEmpty() && isDeliverOozie) || (node_se_api.isEmpty() && isDeliverApi) || (node_sa.isEmpty() && isPackage)) {
-//                System.exit(0)
-//            }
-//
-//            if (isDeliverLocal || isDeliverOozie) {
-//                slave_label = node_se
-//                if (! isProd){
-//                    slave_label = node_se
-//                }
-//
-//            }
-//
-//            if (isPackage) {
-//                slave_label = node_sa
-//
-//            }
-//
-//            if (isDeliverApi) {
-//                slave_label = node_se_api
-//                if (! isProd){
-//                    slave_label = node_se
-//                }
-//
-//            }
-//
-//        }
-//
-//        return slave_label
-   }
+
+
+
+        if (isTab ) {
+            if (! isProd ) {
+                println("Error  cannot execute TAB_MODE in environment  Dev or Qualif  " )
+                println("execute TAB_MODE available only environment  Prod  " )
+                System.exit(0)
+            }
+
+
+            if (isPackage) {
+                slave_label = node_sa_tab
+
+                if (! isProd){
+                    slave_label = node_sa
+                }
+
+            } else {
+                slave_label = node_se_tab
+                if (! isProd){
+                    slave_label = node_se
+                }
+            }
+
+
+        } else {
+
+            if ((node_se.isEmpty() && isDeliverLocal) || (node_se.isEmpty() && isDeliverOozie) || (node_se_api.isEmpty() && isDeliverApi) || (node_sa.isEmpty() && isPackage)) {
+                System.exit(0)
+            }
+
+            if (isDeliverLocal || isDeliverOozie) {
+                slave_label = node_se
+                if (! isProd){
+                    slave_label = node_se
+                }
+
+            }
+
+            if (isPackage) {
+                slave_label = node_sa
+
+            }
+
+            if (isDeliverApi) {
+                slave_label = node_se_api
+                if (! isProd){
+                    slave_label = node_se
+                }
+
+            }
+
+        }
+
+        return slave_label
+    }
 
     def getListLabelSlaves() {
 
-        def jenkins_nodes = jenkins.model.Jenkins.instance.nodes.toString()
+        def jenkins_nodes = jenkins.model.Jenkins.instance.nodes
 //        def nodes_list = jenkins_nodes.collect { node -> node.labelString }.toString()
 //        def jenkins_nodes = ['sa', 'sa_tab', 'se', 'se_tab', 'se_api'].toString()
         return jenkins_nodes
