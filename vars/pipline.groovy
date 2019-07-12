@@ -29,8 +29,8 @@ def call(String pipline) {
             def gitUrl = scm.getUserRemoteConfigs()[0].getUrl()
             println(" mode =====>"+mode)
             println(" action =====>"+action)
-            println(" globalVars =====>"+ globalVars.getListLabelSlaves())
-            println(" globalVars =====>"+ globalVars.getSlave(mode , action, gitUrl))
+//            println(" globalVars =====>"+ globalVars.getListLabelSlaves())
+//            println(" globalVars =====>"+ globalVars.getSlave(mode , action, gitUrl))
 
 
             def slave_labl = globalVars.getSlave(mode , action, gitUrl)
