@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="498a4604-8bae-4d4c-8ab0-039efcd5e006" name="Default Changelist" comment="">
+    <list default="true" id="498a4604-8bae-4d4c-8ab0-039efcd5e006" name="Default Changelist" comment="test first pipline">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/bnp/global/GlobalVars.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bnp/global/GlobalVars.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vars/pipline.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/vars/pipline.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/org/bnp/global/GetSlaveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/bnp/global/GetSlaveTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -56,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="354">
               <caret line="25" column="62" lean-forward="true" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
             </state>
           </provider>
@@ -65,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/bnp/global/GlobalVars.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="425">
+              <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -74,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/org/bnp/global/GetSlaveTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="222" column="68" selection-start-line="222" selection-start-column="16" selection-end-line="222" selection-end-column="68" />
+            <state relative-caret-position="323">
+              <caret line="314" column="38" lean-forward="true" selection-start-line="314" selection-start-column="38" selection-end-line="314" selection-end-column="38" />
               <folding>
                 <element signature="method#getSlaveTabWhenDeliverLocalAction#0;class#GetSlaveTest#0" />
                 <element signature="e#401#408#0" />
@@ -102,13 +102,11 @@
                 <element signature="e#6504#6511#0" />
                 <element signature="e#7175#7224#0" />
                 <element signature="e#7416#7423#0" />
-                <element signature="e#8090#8139#0" />
                 <element signature="e#8303#8310#0" />
                 <element signature="e#8978#9027#0" />
                 <element signature="e#9189#9196#0" />
                 <element signature="e#9861#9910#0" />
                 <element signature="e#10069#10076#0" />
-                <element signature="e#10737#10786#0" />
                 <element signature="e#10946#10953#0" />
                 <element signature="e#11612#11661#0" />
                 <element signature="e#11826#11833#0" />
@@ -123,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vars/pipline.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="476">
+              <caret line="52" column="45" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -141,8 +139,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>test</find>
-      <find>QualifEnv</find>
       <find>slave_labl</find>
+      <find>QualifEnv</find>
     </findStrings>
     <replaceStrings>
       <replace>getSlave(mode, action, gitUrl)</replace>
@@ -178,8 +176,8 @@
         <option value="$PROJECT_DIR$/test/org/bnp/global/GlobalVars.java" />
         <option value="$PROJECT_DIR$/source/src/global/GlobalVars.groovy" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/test/org/bnp/global/GetSlaveTest.java" />
         <option value="$PROJECT_DIR$/vars/pipline.groovy" />
+        <option value="$PROJECT_DIR$/test/org/bnp/global/GetSlaveTest.java" />
         <option value="$PROJECT_DIR$/src/org/bnp/global/GlobalVars.groovy" />
       </list>
     </option>
@@ -239,7 +237,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562940876830" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562942638597" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -279,27 +277,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Groovy.pipline">
-    <configuration name="GetSlaveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests org.bnp.global.GetSlaveTest" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.GetSlaveTest.getSlaveTabWhenPackageActionWhenQualifAndDevEnv">
     <configuration name="GetSlaveTest.getSlaveProdWhenDeliverApiActionWhenQualifAndDevEnv" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -340,12 +318,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GetSlaveTest.getSlaveTabWhenDeliverLocalActionWhenQualifAndDevEnv" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GetSlaveTest.getSlaveProdWhenDeliverOozieActionWhenQualifAndDevEnv" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;org.bnp.global.GetSlaveTest.getSlaveTabWhenDeliverLocalActionWhenQualifAndDevEnv&quot;" />
+        <option name="scriptParameters" value="--tests &quot;org.bnp.global.GetSlaveTest.getSlaveProdWhenDeliverOozieActionWhenQualifAndDevEnv&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -360,24 +338,53 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="pipline" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
-      <module name="Pipline_shared.dsflow-sherd-jenkins" />
-      <setting name="path" value="file://$PROJECT_DIR$/vars/pipline.groovy" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$/vars" />
-      <setting name="debug" value="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="GetSlaveTest.getSlaveProdWhenPackageActionWhenQualifAndDevEnv" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;org.bnp.global.GetSlaveTest.getSlaveProdWhenPackageActionWhenQualifAndDevEnv&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="GetSlaveTest.getSlaveTabWhenPackageActionWhenQualifAndDevEnv" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;org.bnp.global.GetSlaveTest.getSlaveTabWhenPackageActionWhenQualifAndDevEnv&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Groovy.pipline" />
-        <item itemvalue="Gradle.GetSlaveTest.getSlaveTabWhenDeliverLocalActionWhenQualifAndDevEnv" />
-        <item itemvalue="Gradle.GetSlaveTest" />
+        <item itemvalue="Gradle.GetSlaveTest.getSlaveTabWhenPackageActionWhenQualifAndDevEnv" />
         <item itemvalue="Gradle.GetSlaveTest.getSlaveProdWhenDeliverLocalActionWhenQualifAndDevEnv" />
         <item itemvalue="Gradle.GetSlaveTest.getSlaveProdWhenDeliverApiActionWhenQualifAndDevEnv" />
+        <item itemvalue="Gradle.GetSlaveTest.getSlaveProdWhenDeliverOozieActionWhenQualifAndDevEnv" />
+        <item itemvalue="Gradle.GetSlaveTest.getSlaveProdWhenPackageActionWhenQualifAndDevEnv" />
       </list>
     </recent_temporary>
   </component>
@@ -391,20 +398,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562848057289</updated>
-    </task>
-    <task id="LOCAL-00004" summary="test first pipline">
-      <created>1562919674137</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1562919674137</updated>
-    </task>
-    <task id="LOCAL-00005" summary="test first pipline">
-      <created>1562920401908</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1562920401908</updated>
     </task>
     <task id="LOCAL-00006" summary="test first pipline">
       <created>1562920426984</created>
@@ -735,39 +728,53 @@
       <option name="project" value="LOCAL" />
       <updated>1562940664867</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="test first pipline">
+      <created>1562940822135</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1562940822135</updated>
+    </task>
+    <task id="LOCAL-00054" summary="test first pipline">
+      <created>1562940923853</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1562940923853</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GetSlaveTest_getSlaveProdWhenDeliverApiActionWhenQualifAndDevEnv - 2019.07.12 at 14h 24m 20s.xml">
-      <configuration name="GetSlaveTest.getSlaveProdWhenDeliverApiActionWhenQualifAndDevEnv" configurationId="GradleRunConfiguration" />
+    <history-entry file="GetSlaveTest_getSlaveTabWhenPackageActionWhenQualifAndDevEnv - 2019.07.12 at 16h 32m 34s.xml">
+      <configuration name="GetSlaveTest.getSlaveTabWhenPackageActionWhenQualifAndDevEnv" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="GetSlaveTest_getSlaveProdWhenDeliverApiActionWhenQualifAndDevEnv - 2019.07.12 at 14h 25m 04s.xml">
-      <configuration name="GetSlaveTest.getSlaveProdWhenDeliverApiActionWhenQualifAndDevEnv" configurationId="GradleRunConfiguration" />
+    <history-entry file="GetSlaveTest_getSlaveTabWhenPackageActionWhenQualifAndDevEnv - 2019.07.12 at 16h 33m 21s.xml">
+      <configuration name="GetSlaveTest.getSlaveTabWhenPackageActionWhenQualifAndDevEnv" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="GetSlaveTest_getSlaveProdWhenDeliverApiActionWhenQualifAndDevEnv - 2019.07.12 at 14h 25m 20s.xml">
-      <configuration name="GetSlaveTest.getSlaveProdWhenDeliverApiActionWhenQualifAndDevEnv" configurationId="GradleRunConfiguration" />
+    <history-entry file="GetSlaveTest_getSlaveTabWhenPackageActionWhenQualifAndDevEnv - 2019.07.12 at 16h 33m 41s.xml">
+      <configuration name="GetSlaveTest.getSlaveTabWhenPackageActionWhenQualifAndDevEnv" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="GetSlaveTest_getSlaveProdWhenDeliverLocalActionWhenQualifAndDevEnv - 2019.07.12 at 14h 25m 28s.xml">
-      <configuration name="GetSlaveTest.getSlaveProdWhenDeliverLocalActionWhenQualifAndDevEnv" configurationId="GradleRunConfiguration" />
+    <history-entry file="GetSlaveTest_getSlaveTabWhenPackageActionWhenQualifAndDevEnv - 2019.07.12 at 16h 34m 49s.xml">
+      <configuration name="GetSlaveTest.getSlaveTabWhenPackageActionWhenQualifAndDevEnv" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="GetSlaveTest_getSlaveProdWhenDeliverLocalActionWhenQualifAndDevEnv - 2019.07.12 at 14h 26m 15s.xml">
-      <configuration name="GetSlaveTest.getSlaveProdWhenDeliverLocalActionWhenQualifAndDevEnv" configurationId="GradleRunConfiguration" />
+    <history-entry file="GetSlaveTest_getSlaveTabWhenPackageActionWhenQualifAndDevEnv - 2019.07.12 at 16h 35m 44s.xml">
+      <configuration name="GetSlaveTest.getSlaveTabWhenPackageActionWhenQualifAndDevEnv" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="GetSlaveTest_getSlaveProdWhenDeliverLocalActionWhenQualifAndDevEnv - 2019.07.12 at 14h 26m 32s.xml">
-      <configuration name="GetSlaveTest.getSlaveProdWhenDeliverLocalActionWhenQualifAndDevEnv" configurationId="GradleRunConfiguration" />
+    <history-entry file="GetSlaveTest_getSlaveTabWhenPackageActionWhenQualifAndDevEnv - 2019.07.12 at 16h 38m 09s.xml">
+      <configuration name="GetSlaveTest.getSlaveTabWhenPackageActionWhenQualifAndDevEnv" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="GetSlaveTest_getSlaveTabWhenDeliverLocalActionWhenQualifAndDevEnv - 2019.07.12 at 15h 44m 53s.xml">
-      <configuration name="GetSlaveTest.getSlaveTabWhenDeliverLocalActionWhenQualifAndDevEnv" configurationId="GradleRunConfiguration" />
+    <history-entry file="GetSlaveTest_getSlaveTabWhenPackageActionWhenQualifAndDevEnv - 2019.07.12 at 16h 38m 41s.xml">
+      <configuration name="GetSlaveTest.getSlaveTabWhenPackageActionWhenQualifAndDevEnv" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="GetSlaveTest - 2019.07.12 at 15h 44m 59s.xml">
-      <configuration name="GetSlaveTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="GetSlaveTest_getSlaveTabWhenPackageActionWhenQualifAndDevEnv - 2019.07.12 at 16h 42m 29s.xml">
+      <configuration name="GetSlaveTest.getSlaveTabWhenPackageActionWhenQualifAndDevEnv" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="GetSlaveTest_getSlaveTabWhenDeliverLocalActionWhenQualifAndDevEnv - 2019.07.12 at 16h 00m 27s.xml">
-      <configuration name="GetSlaveTest.getSlaveTabWhenDeliverLocalActionWhenQualifAndDevEnv" configurationId="GradleRunConfiguration" />
+    <history-entry file="GetSlaveTest_getSlaveTabWhenPackageActionWhenQualifAndDevEnv - 2019.07.12 at 16h 43m 24s.xml">
+      <configuration name="GetSlaveTest.getSlaveTabWhenPackageActionWhenQualifAndDevEnv" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="GetSlaveTest_getSlaveTabWhenDeliverLocalActionWhenQualifAndDevEnv - 2019.07.12 at 16h 00m 28s.xml">
-      <configuration name="GetSlaveTest.getSlaveTabWhenDeliverLocalActionWhenQualifAndDevEnv" configurationId="GradleRunConfiguration" />
+    <history-entry file="GetSlaveTest_getSlaveTabWhenPackageActionWhenQualifAndDevEnv - 2019.07.12 at 16h 43m 42s.xml">
+      <configuration name="GetSlaveTest.getSlaveTabWhenPackageActionWhenQualifAndDevEnv" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -893,15 +900,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="354">
           <caret line="25" column="62" lean-forward="true" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vars/pipline.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="52" column="45" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/org/bnp/global/GetSlaveTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="222" column="68" selection-start-line="222" selection-start-column="16" selection-end-line="222" selection-end-column="68" />
+        <state relative-caret-position="323">
+          <caret line="314" column="38" lean-forward="true" selection-start-line="314" selection-start-column="38" selection-end-line="314" selection-end-column="38" />
           <folding>
             <element signature="method#getSlaveTabWhenDeliverLocalAction#0;class#GetSlaveTest#0" />
             <element signature="e#401#408#0" />
@@ -928,13 +942,11 @@
             <element signature="e#6504#6511#0" />
             <element signature="e#7175#7224#0" />
             <element signature="e#7416#7423#0" />
-            <element signature="e#8090#8139#0" />
             <element signature="e#8303#8310#0" />
             <element signature="e#8978#9027#0" />
             <element signature="e#9189#9196#0" />
             <element signature="e#9861#9910#0" />
             <element signature="e#10069#10076#0" />
-            <element signature="e#10737#10786#0" />
             <element signature="e#10946#10953#0" />
             <element signature="e#11612#11661#0" />
             <element signature="e#11826#11833#0" />
@@ -945,17 +957,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vars/pipline.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/bnp/global/GlobalVars.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="425">
+          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
         </state>
       </provider>
     </entry>
