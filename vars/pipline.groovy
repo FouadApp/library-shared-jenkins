@@ -1,5 +1,3 @@
-package vars
-
 import com.bnp.piplines.GlobalVars
 
 def call(String pipline) {
