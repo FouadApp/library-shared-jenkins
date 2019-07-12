@@ -65,7 +65,6 @@ def call(String pipline) {
                     currentBuild.result = 'ABORTED'
                     echo('Error  cannot execute TAB_MODE in environment  Dev or Qualif')
                     echo('execute TAB_MODE available only environment  Prod')
-                    // return here instead of throwing error to keep the build "green"
                     return
                 }
                 // normal error handling
