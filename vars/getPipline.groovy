@@ -1,4 +1,4 @@
-//import com.pipline.getnode.GlobalVars
+import com.piplines.getnode.GlobalVars
 
 def call(String pipline) {
     if (pipline == 'scoring') {
@@ -21,18 +21,34 @@ def call(String pipline) {
         def UrlGitlab
 
 
-        node('master') {
-            globalvars = new com.bnp.piplines.GlobalVars()
 
+//        node('master') {
+//            properties ([
+//                    parameters([
+//                            [
+//                                    $class: 'NodeParameterDefinition',
+//                                    allowedSlaves: ['ALL (no restriction)'],
+//                                    defaultSlaves: ['master'],
+//                                    description: 'What nodes to run the build on.',
+//                                    name: 'NODE_NAME',
+//                                    nodeEligibility: [$class: 'AllNodeEligibility'],
+//                                    triggerIfResult: 'allowMultiSelectionForConcurrentBuilds'
+//                            ]
+//                    ])
+//            ])
+//
+//        }
+
+
+
+
+        node('master') {
+            msbuilder = new GlobalVars()
             def mode = "${params.MODE}"
             def action = "${params.ACTION}"
-            def slave_labl = globalvars.getSlave(mode, action)
-            println("test call =====>"+slave_labl)
+            def slave_labl = msbuilder.test1(mode , action)
 
-            def url = new URL ("${env.GIT_URL}")
-            def host = url.host
-            HOST = host
-            echo "result = "+host
+            println("test call =====>"+slave_labl)
 
         }
 
@@ -102,6 +118,12 @@ def call(String pipline) {
                             def host = url.host
                             HOST = host
                             echo "result = "+host
+                            def node = NODE_NAME.toLowerCase()
+                            def mode = MODE.toLowerCase()
+                            def isTab = (node.contains('_tab') == mode.contains('_tab'))
+
+
+
 
                         }
 
