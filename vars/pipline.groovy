@@ -27,7 +27,9 @@ def call(String pipline) {
             def mode = "${params.MODE}"
             def action = "${params.ACTION}"
             def gitUrl = scm.getUserRemoteConfigs()[0].getUrl()
-            println(" call =====>"+slave_labl)
+            println(" mode =====>"+mode)
+            println(" action =====>"+action)
+            println(" globalVars =====>"+ globalVars.getProperties().toString())
 
 
 
