@@ -1,3 +1,5 @@
+package vars
+
 import com.bnp.piplines.GlobalVars
 
 def call(String pipline) {
@@ -32,13 +34,6 @@ def call(String pipline) {
             println(" call =====>"+slave_labl)
 
         }
-
-
-
-
-
-
-
 
 
         pipeline {
