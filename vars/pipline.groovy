@@ -26,16 +26,13 @@ def call(String pipline) {
             globalVars = new GlobalVars()
             def mode = "${params.MODE}"
             def action = "${params.ACTION}"
-            def slave_labl = globalVars.getSlave(mode , action)
-            def scmUrl = scm.getUserRemoteConfigs()[0].getUrl()
+            def gitUrl = scm.getUserRemoteConfigs()[0].getUrl()
+
+            def slave_labl = globalVars.getSlave(mode , action, gitUrl)
 
             println(" call =====>"+slave_labl)
             println(" scmUrl =====>"+scmUrl)
-//
-//            def url = new URL ("${env.GIT_URL}")
-//            def host = url.host
-//            HOST = host
-            echo "${env.GIT_URL}"
+
 
         }
 

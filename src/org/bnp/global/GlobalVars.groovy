@@ -3,7 +3,7 @@ package org.bnp.global;
 
 
 class GlobalVars {
-    def getSlave(mode, action) {
+    def getSlave(mode, action, gitUrl) {
         //add code for this method
         //jenkins_nodes = ['sa','sa_tab','se', 'se_tab','se_api']
         def nodes_list = getListLabelSlaves()
@@ -20,6 +20,9 @@ class GlobalVars {
         def isDeliverApi = action_lower.contains('deliver_api')
         def isPackage = action_lower.contains('package')
         def isDeliver = action_lower.contains('deliver')
+        def isProd = gitUrl.contains('france')
+        def isQualif = gitUrl.contains('staging')
+        def isDev = gitUrl.contains('dev')
         def slave_label = ''
 
 
@@ -33,10 +36,17 @@ class GlobalVars {
                 println("node_sa_tab is => " + node_sa_tab)
                 slave_label = node_sa_tab
 
+                if (! isProd){
+                    slave_label = node_sa
+                }
+
             } else {
 
                 println("node_se_tab is => " + node_se_tab)
                 slave_label = node_se_tab
+                if (! isProd){
+                    slave_label = node_se
+                }
             }
 
 
@@ -49,6 +59,9 @@ class GlobalVars {
             if (isDeliverLocal || isDeliverOozie) {
                 println("node_se is => " + node_se)
                 slave_label = node_se
+                if (! isProd){
+                    slave_label = node_se
+                }
 
             }
 
@@ -61,9 +74,11 @@ class GlobalVars {
             if (isDeliverApi) {
                 println("node_se_api is => " + node_se_api)
                 slave_label = node_se_api
+                if (! isProd){
+                    slave_label = node_se
+                }
 
             }
-
 
         }
 
