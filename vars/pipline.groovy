@@ -30,6 +30,7 @@ def call(String pipline) {
             println(" mode =====>"+mode)
             println(" action =====>"+action)
             println(" globalVars =====>"+ globalVars.getListLabelSlaves())
+            println(" globalVars =====>"+ globalVars.getSlave(mode , action, gitUrl))
 
 
             def slave_labl = globalVars.getSlave(mode , action, gitUrl)

@@ -5,7 +5,6 @@ package org.bnp.global;
 class GlobalVars {
     def getSlave(mode, action, gitUrl) {
         //add code for this method
-        //jenkins_nodes = ['sa','sa_tab','se', 'se_tab','se_api']
         def nodes_list = getListLabelSlaves()
         println("------------------------------")
         def node_se_tab = nodes_list.find('se_tab')
@@ -53,9 +52,9 @@ class GlobalVars {
 
         } else {
 
-            if ((node_se.isEmpty() && isDeliverLocal) || (node_se.isEmpty() && isDeliverOozie) || (node_se_api.isEmpty() && isDeliverApi) || (node_sa.isEmpty() && isPackage)) {
-                System.exit(0)
-            }
+//            if ((node_se.isEmpty() && isDeliverLocal) || (node_se.isEmpty() && isDeliverOozie) || (node_se_api.isEmpty() && isDeliverApi) || (node_sa.isEmpty() && isPackage)) {
+//                System.exit(0)
+//            }
 
             if (isDeliverLocal || isDeliverOozie) {
                 slave_label = node_se
