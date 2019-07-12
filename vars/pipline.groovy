@@ -30,6 +30,11 @@ def call(String pipline) {
 
             println(" call =====>"+slave_labl)
 
+            def url = new URL ("${env.GIT_URL}")
+            def host = url.host
+            HOST = host
+            echo "result = "+host
+
         }
 
 
@@ -91,9 +96,7 @@ def call(String pipline) {
                             def host = url.host
                             HOST = host
                             echo "result = "+host
-                            def node = NODE_NAME.toLowerCase()
-                            def mode = MODE.toLowerCase()
-                            def isTab = (node.contains('_tab') == mode.contains('_tab'))
+
 
 
 
