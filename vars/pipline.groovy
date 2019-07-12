@@ -46,7 +46,7 @@ def call(String pipline) {
 
             agent {
                 node {
-                    label "${NODE_NAME}"
+                    label slave_labl
                     customWorkspace "${env.WORKSPACE}/${env.JOB_NAME}_${env.BUILD_ID}"
 
                 }
