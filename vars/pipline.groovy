@@ -30,24 +30,11 @@ def call(String pipline) {
             def isProd = gitUrl.contains('france')
 
 
-            parameters {
-                string(name: 'RUN_ID', description: 'get run_id of model')
-                //string(name: 'USER_ID',description: 'get user_id')
-                //string(name: 'URL_GIT',defaultValue:'master',  description: 'get url_git')
-                //gitParameter branchFilter: 'origin/(.*)', defaultValue: 'master', name: 'BRANCH', type: 'PT_BRANCH'
-                choice(
-                        choices: ['PACKAGE' , 'DELIVER_OOZIE', 'DELIVER_LOCAL', 'DELIVER_API' ],
-                        description: '',
-                        name: 'ACTION'
-                )
-
-                choice(
-                        choices: ['PROD_MODE' , 'TAB_MODE' ],
-                        description: 'Choosing the  execution mode',
-                        name: 'MODE'
-                )
-
-            }
+            properties ([
+                    parameters([
+                            [ string(name: 'RUN_ID', description: 'get run_id of model') ]
+                    ])
+            ])
 
             try {
                 // Some pipeline code
@@ -81,6 +68,24 @@ def call(String pipline) {
 
 
 
+            parameters {
+                string(name: 'RUN_ID', description: 'get run_id of model')
+                //string(name: 'USER_ID',description: 'get user_id')
+                //string(name: 'URL_GIT',defaultValue:'master',  description: 'get url_git')
+                //gitParameter branchFilter: 'origin/(.*)', defaultValue: 'master', name: 'BRANCH', type: 'PT_BRANCH'
+                choice(
+                        choices: ['PACKAGE' , 'DELIVER_OOZIE', 'DELIVER_LOCAL', 'DELIVER_API' ],
+                        description: '',
+                        name: 'ACTION'
+                )
+
+                choice(
+                        choices: ['PROD_MODE' , 'TAB_MODE' ],
+                        description: 'Choosing the  execution mode',
+                        name: 'MODE'
+                )
+
+            }
 
 
             stages {
