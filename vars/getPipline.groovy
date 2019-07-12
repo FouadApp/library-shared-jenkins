@@ -1,4 +1,4 @@
-import com.piplines.getnode.GlobalVars
+import com.bnp.piplines.GlobalVars
 
 def call(String pipline) {
     if (pipline == 'scoring') {
