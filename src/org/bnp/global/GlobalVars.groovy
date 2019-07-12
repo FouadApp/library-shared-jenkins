@@ -6,8 +6,6 @@ class GlobalVars {
     def getSlave(mode, action, gitUrl) {
         //add code for this method
         //jenkins_nodes = ['sa','sa_tab','se', 'se_tab','se_api']
-        println("------------------------------")
-
         def nodes_list = getListLabelSlaves()
         println("------------------------------")
         def node_se_tab = nodes_list.find('se_tab')
@@ -27,35 +25,30 @@ class GlobalVars {
         def isDev = gitUrl.contains('dev')
         def slave_label = ''
 
+
+
+
         if (isTab ) {
-            try {
-                // Some pipeline code
+//            if (! isProd ) {
+//                println("Error  cannot execute TAB_MODE in environment  Dev or Qualif  " )
+//                println("execute TAB_MODE available only environment  Prod  " )
+//                System.exit(0)
+//            }
+
+
+            if (isPackage) {
+                slave_label = node_sa_tab
+
                 if (! isProd){
-
-                    if (isPackage) {
-                        slave_label = node_sa_tab
-
-                        if (! isProd){
-                            slave_label = node_sa
-                        }
-
-                    } else {
-                        slave_label = node_se_tab
-                        if (! isProd){
-                            slave_label = node_se
-                        }
-                    }
-
-
+                    slave_label = node_sa
                 }
-            } catch(Exception e) {
-                // Do something with the exception
 
-                error "Program failed, please read logs..."
+            } else {
+                slave_label = node_se_tab
+                if (! isProd){
+                    slave_label = node_se
+                }
             }
-
-
-
 
 
         } else {
