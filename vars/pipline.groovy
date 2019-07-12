@@ -32,7 +32,7 @@ def call(String pipline) {
 
             properties ([
                     parameters([
-                            [ string(name: 'RUN_ID', description: 'get run_id of model') ]
+                             string(name: 'RUN_ID', description: 'get run_id of model')
                     ])
             ])
 
