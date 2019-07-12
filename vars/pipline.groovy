@@ -29,11 +29,11 @@ def call(String pipline) {
             def slave_labl = globalVars.getSlave(mode , action)
 
             println(" call =====>"+slave_labl)
-
-            def url = new URL ("${env.GIT_URL}")
-            def host = url.host
-            HOST = host
-            echo "result = "+host
+//
+//            def url = new URL ("${env.GIT_URL}")
+//            def host = url.host
+//            HOST = host
+            echo "result = "${env.GIT_URL}
 
         }
 
