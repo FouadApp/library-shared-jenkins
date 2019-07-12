@@ -6,6 +6,8 @@ class GlobalVars {
     def getSlave(mode, action, gitUrl) {
         //add code for this method
         //jenkins_nodes = ['sa','sa_tab','se', 'se_tab','se_api']
+        println("------------------------------")
+
         def nodes_list = getListLabelSlaves()
         println("------------------------------")
         def node_se_tab = nodes_list.find('se_tab')
@@ -24,9 +26,6 @@ class GlobalVars {
         def isQualif = gitUrl.contains('staging')
         def isDev = gitUrl.contains('dev')
         def slave_label = ''
-
-
-
 
         if (isTab ) {
             try {
