@@ -1,4 +1,4 @@
-import org.bnp.global.GlobalVars
+import main.groovy.com.bnp.piplines.GlobalVars
 
 
 

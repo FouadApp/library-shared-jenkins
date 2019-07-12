@@ -1,7 +1,7 @@
 package com.bnp.piplines.tests;
 
 
-import com.bnp.piplines.GlobalVars;
+import main.groovy.com.bnp.piplines.GlobalVars;
 import org.junit.Test;
 import org.mockito.Mock;
 

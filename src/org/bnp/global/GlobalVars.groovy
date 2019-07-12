@@ -1,4 +1,4 @@
-package com.bnp.piplines
+package org.bnp.global
 
 class GlobalVars {
     def getSlave(mode, action) {
