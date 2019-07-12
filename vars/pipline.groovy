@@ -26,9 +26,21 @@ def call(String pipline) {
             globalVars = new GlobalVars()
             def mode = "${params.MODE}"
             def action = "${params.ACTION}"
-            def gitUrl = scm.getUserRemoteConfigs()[0].getUrl()
+            def gitUrl = scm.getUserRemoteConfigs()[0].getUrl().toString()
+            def isProd = gitUrl.contains('france')
 
-            def slave_labl = globalVars.getSlave(mode , action, gitUrl)
+            try {
+                // Some pipeline code
+                if (! isProd){
+                    def slave_labl = globalVars.getSlave(mode , action, gitUrl)
+                }
+            } catch(Exception e) {
+                // Do something with the exception
+
+                error "Program failed, please read logs..."
+            }
+
+
 
             println(" call =====>"+slave_labl)
             println(" scmUrl =====>"+gitUrl)
