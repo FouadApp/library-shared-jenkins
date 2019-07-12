@@ -27,11 +27,32 @@ def call(String pipline) {
             def mode = "${params.MODE}"
             def action = "${params.ACTION}"
             def gitUrl = scm.getUserRemoteConfigs()[0].getUrl()
+            println(" scmUrl =====>"+gitUrl)
+
 
             def slave_labl = globalVars.getSlave(mode , action, gitUrl)
 
             println(" call =====>"+slave_labl)
-            println(" scmUrl =====>"+gitUrl)
+
+
+            //            properties ([
+//                    parameters([
+//                             string(name: 'RUN_ID', description: 'get run_id of model'),
+//                             choice(
+//                                     choices: ['PACKAGE' , 'DELIVER_OOZIE', 'DELIVER_LOCAL', 'DELIVER_API' ],
+//                                     description: '',
+//                                     name: 'ACTION'
+//                             ),
+//
+//                             choice(
+//                                     choices: ['PROD_MODE' , 'TAB_MODE' ],
+//                                     description: 'Choosing the  execution mode',
+//                                     name: 'MODE'
+//                             )
+//
+//
+//                    ])
+//            ])
 
 
         }
