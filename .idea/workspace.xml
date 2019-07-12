@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="498a4604-8bae-4d4c-8ab0-039efcd5e006" name="Default Changelist" comment="" />
+    <list default="true" id="498a4604-8bae-4d4c-8ab0-039efcd5e006" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/bnp/piplines/GlobalVars.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/bnp/piplines/GlobalVars.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/bnp/piplines/tests/GetSlaveTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/bnp/piplines/tests/GetSlaveTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/bnp/piplines/GlobalVars.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/bnp/piplines/GlobalVars.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bnp/piplines/tests/GetSlaveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bnp/piplines/tests/GetSlaveTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vars/getPipline.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/vars/getPipline.groovy" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -38,17 +45,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/groovy/com/bnp/piplines/GlobalVars.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+            <state relative-caret-position="221">
+              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/bnp/piplines/tests/GetSlaveTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+            <state relative-caret-position="412">
+              <caret line="212" column="46" lean-forward="true" selection-start-line="212" selection-start-column="24" selection-end-line="212" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,8 +64,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vars/getPipline.groovy">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -70,20 +90,26 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/groovy/com/bnp/piplines/GlobalVars.groovy" />
+        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/com/bnp/piplines/tests/GetSlaveTest.java" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/bnp/piplines/GlobalVars.groovy" />
+        <option value="$PROJECT_DIR$/vars/getPipline.groovy" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="x" value="328" />
+    <option name="y" value="122" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -110,8 +136,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562848683561" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562919062501" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../pipline_library" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
@@ -131,8 +160,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="GetSlaveTest.GetSlaveTabWhenDeliverAction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GetSlaveTest.GetSlaveProdWhenDeliverLocalAction">
+    <configuration name="GetSlaveTest.GetSlaveProdWhenDeliverApiAction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Pipline_shared.dsflow-sherd-jenkins.test" />
       <extension name="coverage">
         <pattern>
@@ -142,7 +171,71 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.bnp.piplines.tests" />
       <option name="MAIN_CLASS_NAME" value="com.bnp.piplines.tests.GetSlaveTest" />
-      <option name="METHOD_NAME" value="GetSlaveTabWhenDeliverAction" />
+      <option name="METHOD_NAME" value="GetSlaveProdWhenDeliverApiAction" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetSlaveTest.GetSlaveProdWhenDeliverLocalAction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pipline_shared.dsflow-sherd-jenkins.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bnp.piplines.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bnp.piplines.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.bnp.piplines.tests.GetSlaveTest" />
+      <option name="METHOD_NAME" value="GetSlaveProdWhenDeliverLocalAction" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetSlaveTest.GetSlaveProdWhenDeliverOozieAction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pipline_shared.dsflow-sherd-jenkins.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bnp.piplines.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bnp.piplines.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.bnp.piplines.tests.GetSlaveTest" />
+      <option name="METHOD_NAME" value="GetSlaveProdWhenDeliverOozieAction" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetSlaveTest.GetSlaveProdWhenPackageAction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pipline_shared.dsflow-sherd-jenkins.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bnp.piplines.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bnp.piplines.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.bnp.piplines.tests.GetSlaveTest" />
+      <option name="METHOD_NAME" value="GetSlaveProdWhenPackageAction" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetSlaveTest.GetSlaveTabWhenPackageAction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pipline_shared.dsflow-sherd-jenkins.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bnp.piplines.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bnp.piplines.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.bnp.piplines.tests.GetSlaveTest" />
+      <option name="METHOD_NAME" value="GetSlaveTabWhenPackageAction" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,7 +243,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GetSlaveTest.GetSlaveTabWhenDeliverAction" />
+        <item itemvalue="JUnit.GetSlaveTest.GetSlaveProdWhenDeliverLocalAction" />
+        <item itemvalue="JUnit.GetSlaveTest.GetSlaveProdWhenDeliverApiAction" />
+        <item itemvalue="JUnit.GetSlaveTest.GetSlaveProdWhenDeliverOozieAction" />
+        <item itemvalue="JUnit.GetSlaveTest.GetSlaveProdWhenPackageAction" />
+        <item itemvalue="JUnit.GetSlaveTest.GetSlaveTabWhenPackageAction" />
       </list>
     </recent_temporary>
   </component>
@@ -168,27 +265,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GetSlaveTest_GetSlaveTabWhenDeliverAction - 2019.07.11 at 14h 32m 04s.xml">
-      <configuration name="GetSlaveTest.GetSlaveTabWhenDeliverAction" configurationId="JUnit" />
+    <history-entry file="GetSlaveTest_GetSlaveTabWhenDeliverOozieAction - 2019.07.12 at 10h 05m 34s.xml">
+      <configuration name="GetSlaveTest.GetSlaveTabWhenDeliverOozieAction" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GetSlaveTest_GetSlaveTabWhenDeliverAction - 2019.07.11 at 14h 33m 38s.xml">
-      <configuration name="GetSlaveTest.GetSlaveTabWhenDeliverAction" configurationId="JUnit" />
+    <history-entry file="GetSlaveTest_GetSlaveTabWhenDeliverApiAction - 2019.07.12 at 10h 06m 06s.xml">
+      <configuration name="GetSlaveTest.GetSlaveTabWhenDeliverApiAction" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GetSlaveTest_GetSlaveTabWhenDeliverAction - 2019.07.11 at 14h 34m 08s.xml">
-      <configuration name="GetSlaveTest.GetSlaveTabWhenDeliverAction" configurationId="JUnit" />
+    <history-entry file="GetSlaveTest_GetSlaveTabWhenDeliverApiAction - 2019.07.12 at 10h 07m 30s.xml">
+      <configuration name="GetSlaveTest.GetSlaveTabWhenDeliverApiAction" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GetSlaveTest_GetSlaveTabWhenDeliverAction - 2019.07.11 at 14h 34m 37s.xml">
-      <configuration name="GetSlaveTest.GetSlaveTabWhenDeliverAction" configurationId="JUnit" />
+    <history-entry file="GetSlaveTest_GetSlaveTabWhenDeliverOozieAction - 2019.07.12 at 10h 07m 36s.xml">
+      <configuration name="GetSlaveTest.GetSlaveTabWhenDeliverOozieAction" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GetSlaveTest_GetSlaveTabWhenDeliverAction - 2019.07.11 at 14h 35m 27s.xml">
-      <configuration name="GetSlaveTest.GetSlaveTabWhenDeliverAction" configurationId="JUnit" />
+    <history-entry file="GetSlaveTest_GetSlaveTabWhenDeliverLocalAction - 2019.07.12 at 10h 07m 40s.xml">
+      <configuration name="GetSlaveTest.GetSlaveTabWhenDeliverLocalAction" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GetSlaveTest_GetSlaveTabWhenDeliverAction - 2019.07.11 at 14h 35m 54s.xml">
-      <configuration name="GetSlaveTest.GetSlaveTabWhenDeliverAction" configurationId="JUnit" />
+    <history-entry file="GetSlaveTest_GetSlaveTabWhenPackageAction - 2019.07.12 at 10h 08m 45s.xml">
+      <configuration name="GetSlaveTest.GetSlaveTabWhenPackageAction" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GetSlaveTest_GetSlaveProdWhenPackageAction - 2019.07.12 at 10h 09m 27s.xml">
+      <configuration name="GetSlaveTest.GetSlaveProdWhenPackageAction" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GetSlaveTest_GetSlaveProdWhenDeliverOozieAction - 2019.07.12 at 10h 10m 08s.xml">
+      <configuration name="GetSlaveTest.GetSlaveProdWhenDeliverOozieAction" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GetSlaveTest_GetSlaveProdWhenDeliverApiAction - 2019.07.12 at 10h 10m 34s.xml">
+      <configuration name="GetSlaveTest.GetSlaveProdWhenDeliverApiAction" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GetSlaveTest_GetSlaveProdWhenDeliverLocalAction - 2019.07.12 at 10h 11m 04s.xml">
+      <configuration name="GetSlaveTest.GetSlaveProdWhenDeliverLocalAction" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -201,16 +311,16 @@
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Build" weight="0.3153527" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32987553" />
+      <window_info anchor="bottom" id="Messages" weight="0.32900432" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32987553" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1525974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette" />
-      <window_info active="true" anchor="right" id="Gradle" visible="true" weight="0.32995737" />
+      <window_info anchor="right" id="Gradle" visible="true" weight="0.32995737" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Palette&#9;" />
@@ -220,26 +330,128 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/bnp/piplines/tests/GetSlaveTest.java</url>
+          <line>19</line>
+          <properties class="com.bnp.piplines.tests.GetSlaveTest" method="GetSlaveTabWhenDeliverAction">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/bnp/piplines/GlobalVars.groovy">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vars/getPipline.groovy">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/bnp/piplines/GlobalVars.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/bnp/piplines/tests/GetSlaveTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        <state relative-caret-position="412">
+          <caret line="212" column="46" lean-forward="true" selection-start-line="212" selection-start-column="24" selection-end-line="212" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vars/getPipline.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>groovy-2.5.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Pipline_shared.dsflow-sherd-jenkins</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3908046" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: junit:junit:4.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

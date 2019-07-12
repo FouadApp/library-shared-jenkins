@@ -2,12 +2,21 @@ package com.bnp.piplines
 
 class GlobalVars {
 
-    def test1(mode , action){
+
+
+    def getListLabelSlaves(){
+
+//        def jenkins_nodes = jenkins.model.Jenkins.instance.nodes
+//        def nodes_list = jenkins_nodes.collect { node -> node.labelString }.toString()
+        def jenkins_nodes = ['sa','sa_tab','se', 'se_tab','se_api'].toString()
+        return jenkins_nodes
+
+    }
+
+    def getSlave(mode, action){
         //add code for this method
-//    jenkins_nodes = jenkins.model.Jenkins.instance.nodes
         //jenkins_nodes = ['sa','sa_tab','se', 'se_tab','se_api']
-//    def nodes_list = jenkins_nodes.collect { node -> node.labelString }.toString()
-        def nodes_list = ['sa','sa_tab','se', 'se_tab','se_api'].toString()
+        def nodes_list = getListLabelSlaves()
         println("------------------------------")
         def node_se_tab = nodes_list.find('se_tab')
         def node_sa = nodes_list.find('sa')
