@@ -22,7 +22,7 @@ def call(String pipline) {
 
 
         node('master') {
-            def globalvars = new com.bnp.piplines.GlobalVars()
+            globalvars = new com.bnp.piplines.GlobalVars()
 
             def mode = "${params.MODE}"
             def action = "${params.ACTION}"
