@@ -28,6 +28,7 @@ def call(String pipline) {
             def mode = "${params.MODE}"
             def action = "${params.ACTION}"
             def gitUrl = scm.getUserRemoteConfigs()[0].getUrl()
+
             properties ([
                     parameters([
 
@@ -46,6 +47,29 @@ def call(String pipline) {
 
                     ])
             ])
+
+            def isTab = mode.toString().toLowerCase().contains('tab')
+            def isProd = gitUrl.contains('france')
+            def autoCancelled = false
+
+            try {
+                stage('checkout') {
+
+                    if (! isProd && isTab) {
+                        autoCancelled = true
+                        error('Aborting the build to prevent a loop.')
+                    }
+                }
+            } catch (e) {
+                if (autoCancelled) {
+                    currentBuild.result = 'ABORTED'
+                    echo('Skipping mail notification')
+                    // return here instead of throwing error to keep the build "green"
+                    return
+                }
+                // normal error handling
+                throw e
+            }
 
 
             def slave_labl = globalVars.getSlave(mode , action, gitUrl)
