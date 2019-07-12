@@ -28,16 +28,8 @@ class GlobalVars {
 
 
         if (isTab ) {
-//            if (! isProd ) {
-//                println("Error  cannot execute TAB_MODE in environment  Dev or Qualif  " )
-//                println("execute TAB_MODE available only environment  Prod  " )
-//                System.exit(0)
-//            }
-
-
 
                 if (isProd){
-
                     if (isPackage) {
                         slave_label = node_sa_tab
 

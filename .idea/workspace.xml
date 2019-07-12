@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="498a4604-8bae-4d4c-8ab0-039efcd5e006" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/bnp/global/GlobalVars.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/bnp/global/GlobalVars.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vars/pipline.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/vars/pipline.groovy" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -64,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/bnp/global/GlobalVars.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14">
-              <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-end-line="22" />
+            <state relative-caret-position="-68">
+              <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -120,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vars/pipline.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="1190">
+              <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -138,8 +139,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>test</find>
-      <find>QualifEnv</find>
       <find>slave_labl</find>
+      <find>QualifEnv</find>
     </findStrings>
     <replaceStrings>
       <replace>getSlave(mode, action, gitUrl)</replace>
@@ -176,8 +177,8 @@
         <option value="$PROJECT_DIR$/source/src/global/GlobalVars.groovy" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/test/org/bnp/global/GetSlaveTest.java" />
-        <option value="$PROJECT_DIR$/src/org/bnp/global/GlobalVars.groovy" />
         <option value="$PROJECT_DIR$/vars/pipline.groovy" />
+        <option value="$PROJECT_DIR$/src/org/bnp/global/GlobalVars.groovy" />
       </list>
     </option>
   </component>
@@ -236,7 +237,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562943356297" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562943893623" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -397,13 +398,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562848057289</updated>
-    </task>
-    <task id="LOCAL-00009" summary="test first pipline">
-      <created>1562924148564</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1562924148564</updated>
     </task>
     <task id="LOCAL-00010" summary="test first pipline">
       <created>1562925912208</created>
@@ -741,7 +735,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562943165579</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="test first pipline">
+      <created>1562943483134</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1562943483134</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -904,6 +905,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vars/pipline.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/org/bnp/global/GetSlaveTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -949,17 +957,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vars/pipline.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/bnp/global/GlobalVars.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-end-line="22" />
+        <state relative-caret-position="-68">
+          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
         </state>
       </provider>
     </entry>

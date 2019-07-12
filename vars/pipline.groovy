@@ -63,7 +63,8 @@ def call(String pipline) {
             } catch (e) {
                 if (autoCancelled) {
                     currentBuild.result = 'ABORTED'
-                    echo('Skipping mail notification')
+                    echo('Error  cannot execute TAB_MODE in environment  Dev or Qualif')
+                    echo('execute TAB_MODE available only environment  Prod')
                     // return here instead of throwing error to keep the build "green"
                     return
                 }
