@@ -27,8 +27,10 @@ def call(String pipline) {
             def mode = "${params.MODE}"
             def action = "${params.ACTION}"
             def slave_labl = globalVars.getSlave(mode , action)
+            def scmUrl = scm.getUserRemoteConfigs()[0].getUrl()
 
             println(" call =====>"+slave_labl)
+            println(" scmUrl =====>"+scmUrl)
 //
 //            def url = new URL ("${env.GIT_URL}")
 //            def host = url.host
