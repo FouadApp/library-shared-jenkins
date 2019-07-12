@@ -18,3 +18,21 @@ dependencies {
     testCompile 'org.mockito:mockito-core:2.7.22'
 
 }
+
+
+sourceSets {
+    main {
+        java {
+            srcDirs = []
+        }
+        groovy {
+            // all code files will be in either of the folders
+            srcDirs = ['src', 'vars']
+        }
+    }
+    test {
+        java {
+            srcDir 'test'
+        }
+    }
+}
