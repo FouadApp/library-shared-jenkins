@@ -85,7 +85,7 @@ class GlobalVars {
 
     def getListLabelSlaves() {
 
-        def jenkins_nodes = jenkins.model.Jenkins.instance.nodes
+        def jenkins_nodes = jenkins.model.Jenkins.instance.nodes.toString()
 //        def nodes_list = jenkins_nodes.collect { node -> node.labelString }.toString()
 //        def jenkins_nodes = ['sa', 'sa_tab', 'se', 'se_tab', 'se_api'].toString()
         return jenkins_nodes
