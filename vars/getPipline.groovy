@@ -1,4 +1,4 @@
-import com.pipline.getnode.GlobalVars
+//import com.pipline.getnode.GlobalVars
 
 def call(String pipline) {
     if (pipline == 'scoring') {
@@ -22,7 +22,8 @@ def call(String pipline) {
 
 
         node('master') {
-            def globalvars = new GlobalVars()
+            def globalvars = new com.bnp.piplines.GlobalVars()
+
             def mode = "${params.MODE}"
             def action = "${params.ACTION}"
             def slave_labl = globalvars.getSlave(mode, action)
