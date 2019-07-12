@@ -1,13 +1,5 @@
 import org.bnp.global.GlobalVars
 
-
-
-/**
- * Example custom step for easy use of MsBuild inside Jenkinsfiles
- * @param solutionPath Path to .sln file
- * @return
- */
-
 def call(String pipline) {
     if (pipline == 'scoring') {
         pipeline {
@@ -27,7 +19,6 @@ def call(String pipline) {
         def MODE
         def HOST
         def UrlGitlab
-
 
 
 

@@ -1,12 +1,9 @@
 package org.bnp.global;
-
-
-import main.groovy.com.bnp.piplines.GlobalVars;
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
-
+import org.bnp.global.GlobalVars;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 

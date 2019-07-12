@@ -1,4 +1,6 @@
-package org.bnp.global
+package org.bnp.global;
+
+
 
 class GlobalVars {
     def getSlave(mode, action) {
