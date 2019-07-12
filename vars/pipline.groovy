@@ -50,6 +50,7 @@ def call(String pipline) {
             ])
 
 
+            def slave_labl = globalVars.getSlave(mode , action, gitUrl)
 
             println(" call =====>"+slave_labl)
             println(" scmUrl =====>"+gitUrl)
