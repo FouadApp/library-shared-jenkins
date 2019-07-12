@@ -32,7 +32,7 @@ class GlobalVars {
             if (! isProd ) {
                 println("Error  cannot execute TAB_MODE in environment  Dev or Qualif  " )
                 println("execute TAB_MODE available only environment  Prod  " )
-                System.exit(1)
+                System.exit(0)
             }
 
 
