@@ -22,33 +22,14 @@ def call(String pipline) {
 
 
 
-//        node('master') {
-//            properties ([
-//                    parameters([
-//                            [
-//                                    $class: 'NodeParameterDefinition',
-//                                    allowedSlaves: ['ALL (no restriction)'],
-//                                    defaultSlaves: ['master'],
-//                                    description: 'What nodes to run the build on.',
-//                                    name: 'NODE_NAME',
-//                                    nodeEligibility: [$class: 'AllNodeEligibility'],
-//                                    triggerIfResult: 'allowMultiSelectionForConcurrentBuilds'
-//                            ]
-//                    ])
-//            ])
-//
-//        }
-
-
-
 
         node('master') {
-            msbuilder = new GlobalVars()
+            globalVars = new GlobalVars()
             def mode = "${params.MODE}"
             def action = "${params.ACTION}"
-            def slave_labl = msbuilder.test1(mode , action)
+            def slave_labl = globalVars.getSlave(mode , action)
 
-            println("test call =====>"+slave_labl)
+            println(" call =====>"+slave_labl)
 
         }
 
