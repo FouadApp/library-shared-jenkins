@@ -19,6 +19,7 @@ def call(String pipline) {
         def MODE
         def HOST
         def UrlGitlab
+        def SLAVE
 
 
 
@@ -34,6 +35,7 @@ def call(String pipline) {
 
 
             def slave_labl = globalVars.getSlave(mode , action, gitUrl)
+            SLAVE = slave_labl
 //
             println(" call =====>"+slave_labl)
 //            println(" scmUrl =====>"+scmUrl)
@@ -46,7 +48,7 @@ def call(String pipline) {
 
             agent {
                 node {
-                    label slave_labl
+                    label SLAVE
                     customWorkspace "${env.WORKSPACE}/${env.JOB_NAME}_${env.BUILD_ID}"
 
                 }
@@ -100,10 +102,6 @@ def call(String pipline) {
                             def host = url.host
                             HOST = host
                             echo "result = "+host
-
-
-
-
 
                         }
 
