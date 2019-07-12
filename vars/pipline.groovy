@@ -23,7 +23,7 @@ def call(String pipline) {
 
 
         node('master') {
-            globalVars = new GlobalVars()
+            def globalVars = new GlobalVars()
             def mode = "${params.MODE}"
             def action = "${params.ACTION}"
             def gitUrl = scm.getUserRemoteConfigs()[0].getUrl()
