@@ -49,17 +49,6 @@ def call(String pipline) {
                     ])
             ])
 
-            try {
-                // Some pipeline code
-                if (! isProd){
-                    def slave_labl = globalVars.getSlave(mode , action, gitUrl)
-                }
-            } catch(Exception e) {
-                // Do something with the exception
-
-                error "Program failed, please read logs..."
-            }
-
 
 
             println(" call =====>"+slave_labl)
