@@ -33,7 +33,7 @@ def call(String pipline) {
 //            def url = new URL ("${env.GIT_URL}")
 //            def host = url.host
 //            HOST = host
-            echo "result = "${env.GIT_URL}
+            echo "${env.GIT_URL}"
 
         }
 
