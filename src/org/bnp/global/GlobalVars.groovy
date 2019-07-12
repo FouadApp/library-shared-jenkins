@@ -29,37 +29,30 @@ class GlobalVars {
 
         if (isTab ) {
 
-
-
             try {
 
                 if (! isProd){
-                    println "hello world"
 
+                    if (isPackage) {
+                        slave_label = node_sa_tab
+
+                        if (! isProd){
+                            slave_label = node_sa
+                        }
+
+                    } else {
+                        slave_label = node_se_tab
+                        if (! isProd){
+                            slave_label = node_se
+                        }
+                    }
                 }
             }
             catch(Exception e) {
-                println "re throwing"
+                println "ERROR *****************"
                 throw e
             }
 
-
-
-
-
-            if (isPackage) {
-                slave_label = node_sa_tab
-
-                if (! isProd){
-                    slave_label = node_sa
-                }
-
-            } else {
-                slave_label = node_se_tab
-                if (! isProd){
-                    slave_label = node_se
-                }
-            }
 
 
         } else {
