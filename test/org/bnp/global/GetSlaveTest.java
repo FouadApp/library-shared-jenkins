@@ -13,7 +13,7 @@ public class GetSlaveTest {
 
 
     @Test
-    public void GetSlaveTabWhenDeliverLocalAction() {
+    public void getSlaveTabWhenDeliverLocalActionWhenProdENV() {
 
         //GIVEN
 
@@ -21,14 +21,15 @@ public class GetSlaveTest {
         String mode = "tab_mode";
         String action = "deliver_local";
         String node_expecxted = "se_tab";
+        String gitUrl = "https://gitlab-sdi101ml.france.echonet";
         String node ;
         List<String> nodeLists = Arrays.asList("sa","sa_tab","se", "se_api","se_tab");
         GlobalVars globalvars = mock(GlobalVars.class);
         when(globalvars.getListLabelSlaves()).thenReturn(nodeLists.toString());
-        when(globalvars.getSlave(mode, action)).thenCallRealMethod();
+        when(globalvars.getSlave(mode, action, gitUrl)).thenCallRealMethod();
 
         // WHEN (execute)
-        node = (String) globalvars.getSlave(mode, action);
+        node = (String) globalvars.getSlave(mode, action, gitUrl);
 //        System.out.println("node is :  "+node);
 
         // THEN ( verify)
@@ -36,10 +37,8 @@ public class GetSlaveTest {
 
     }
 
-
-
     @Test
-    public void GetSlaveTabWhenDeliverOozieAction() {
+    public void getSlaveTabWhenDeliverOozieActionWhenProdENV() {
 
         //GIVEN
 
@@ -47,14 +46,16 @@ public class GetSlaveTest {
         String mode = "tab_mode";
         String action = "deliver_oozie";
         String node_expecxted = "se_tab";
+        String gitUrl = "https://gitlab-sdi101ml.france.echonet";
+
         String node ;
         List<String> nodeLists = Arrays.asList("sa","sa_tab","se", "se_api","se_tab");
         GlobalVars globalvars = mock(GlobalVars.class);
         when(globalvars.getListLabelSlaves()).thenReturn(nodeLists.toString());
-        when(globalvars.getSlave(mode, action)).thenCallRealMethod();
+        when(globalvars.getSlave(mode, action, gitUrl)).thenCallRealMethod();
 
         // WHEN (execute)
-        node = (String) globalvars.getSlave(mode, action);
+        node = (String) globalvars.getSlave(mode, action, gitUrl);
 //        System.out.println("node is :  "+node);
 
         // THEN ( verify)
@@ -62,11 +63,8 @@ public class GetSlaveTest {
 
     }
 
-
-
-
     @Test
-    public void GetSlaveTabWhenDeliverApiAction() {
+    public void getSlaveTabWhenDeliverApiActionWhenProdENV() {
 
         //GIVEN
 
@@ -74,14 +72,15 @@ public class GetSlaveTest {
         String mode = "tab_mode";
         String action = "deliver_api";
         String node_expecxted = "se_tab";
+        String gitUrl = "https://gitlab-sdi101ml.france.echonet";
         String node ;
         List<String> nodeLists = Arrays.asList("sa","sa_tab","se", "se_api","se_tab");
         GlobalVars globalvars = mock(GlobalVars.class);
         when(globalvars.getListLabelSlaves()).thenReturn(nodeLists.toString());
-        when(globalvars.getSlave(mode, action)).thenCallRealMethod();
+        when(globalvars.getSlave(mode, action, gitUrl)).thenCallRealMethod();
 
         // WHEN (execute)
-        node = (String) globalvars.getSlave(mode, action);
+        node = (String) globalvars.getSlave(mode, action, gitUrl);
 //        System.out.println("node is :  "+node);
 
         // THEN ( verify)
@@ -89,9 +88,8 @@ public class GetSlaveTest {
 
     }
 
-
     @Test
-    public void GetSlaveTabWhenPackageAction() {
+    public void getSlaveTabWhenPackageActionWhenProdENV() {
 
         //GIVEN
 
@@ -99,14 +97,15 @@ public class GetSlaveTest {
         String mode = "tab_mode";
         String action = "package";
         String node_expecxted = "sa_tab";
+        String gitUrl = "https://gitlab-sdi101ml.france.echonet";
         String node ;
         List<String> nodeLists = Arrays.asList("sa","sa_tab","se", "se_api","se_tab");
         GlobalVars globalvars = mock(GlobalVars.class);
         when(globalvars.getListLabelSlaves()).thenReturn(nodeLists.toString());
-        when(globalvars.getSlave(mode, action)).thenCallRealMethod();
+        when(globalvars.getSlave(mode, action, gitUrl)).thenCallRealMethod();
 
         // WHEN (execute)
-        node = (String) globalvars.getSlave(mode, action);
+        node = (String) globalvars.getSlave(mode, action, gitUrl);
 //        System.out.println("node is :  "+node);
 
         // THEN ( verify)
@@ -114,9 +113,8 @@ public class GetSlaveTest {
 
     }
 
-
     @Test
-    public void GetSlaveProdWhenPackageAction() {
+    public void getSlaveProdWhenPackageActionWhenProdENV() {
 
         //GIVEN
 
@@ -125,13 +123,15 @@ public class GetSlaveTest {
         String action = "package";
         String node_expecxted = "sa";
         String node ;
+        String gitUrl = "https://gitlab-sdi101ml.france.echonet";
         List<String> nodeLists = Arrays.asList("sa","sa_tab","se", "se_api","se_tab");
         GlobalVars globalvars = mock(GlobalVars.class);
         when(globalvars.getListLabelSlaves()).thenReturn(nodeLists.toString());
-        when(globalvars.getSlave(mode, action)).thenCallRealMethod();
+        when(globalvars.getSlave(mode, action, gitUrl)).thenCallRealMethod();
+
 
         // WHEN (execute)
-        node = (String) globalvars.getSlave(mode, action);
+        node = (String) globalvars.getSlave(mode, action, gitUrl);
 //        System.out.println("node is :  "+node);
 
         // THEN ( verify)
@@ -139,10 +139,8 @@ public class GetSlaveTest {
 
     }
 
-
-
     @Test
-    public void GetSlaveProdWhenDeliverOozieAction() {
+    public void getSlaveProdWhenDeliverOozieActionWhenProdENV() {
 
         //GIVEN
 
@@ -150,14 +148,15 @@ public class GetSlaveTest {
         String mode = "prod_mode";
         String action = "deliver_oozie";
         String node_expecxted = "se";
+        String gitUrl = "https://gitlab-sdi101ml.france.echonet";
         String node ;
         List<String> nodeLists = Arrays.asList("sa","sa_tab","se", "se_api","se_tab");
         GlobalVars globalvars = mock(GlobalVars.class);
         when(globalvars.getListLabelSlaves()).thenReturn(nodeLists.toString());
-        when(globalvars.getSlave(mode, action)).thenCallRealMethod();
+        when(globalvars.getSlave(mode, action, gitUrl)).thenCallRealMethod();
 
         // WHEN (execute)
-        node = (String) globalvars.getSlave(mode, action);
+        node = (String) globalvars.getSlave(mode, action, gitUrl);
 //        System.out.println("node is :  "+node);
 
         // THEN ( verify)
@@ -165,9 +164,8 @@ public class GetSlaveTest {
 
     }
 
-
     @Test
-    public void GetSlaveProdWhenDeliverApiAction() {
+    public void getSlaveProdWhenDeliverApiActionWhenProdENV() {
 
         //GIVEN
 
@@ -175,14 +173,15 @@ public class GetSlaveTest {
         String mode = "prod_mode";
         String action = "deliver_api";
         String node_expecxted = "se_api";
+        String gitUrl = "https://gitlab-sdi101ml.france.echonet";
         String node ;
         List<String> nodeLists = Arrays.asList("sa","sa_tab","se", "se_api","se_tab");
         GlobalVars globalvars = mock(GlobalVars.class);
         when(globalvars.getListLabelSlaves()).thenReturn(nodeLists.toString());
-        when(globalvars.getSlave(mode, action)).thenCallRealMethod();
+        when(globalvars.getSlave(mode, action, gitUrl)).thenCallRealMethod();
 
         // WHEN (execute)
-        node = (String) globalvars.getSlave(mode, action);
+        node = (String) globalvars.getSlave(mode, action, gitUrl);
 //        System.out.println("node is :  "+node);
 
         // THEN ( verify)
@@ -190,11 +189,8 @@ public class GetSlaveTest {
 
     }
 
-
-
-
     @Test
-    public void GetSlaveProdWhenDeliverLocalAction() {
+    public void getSlaveProdWhenDeliverLocalActionWhenProdENV() {
 
         //GIVEN
 
@@ -202,14 +198,15 @@ public class GetSlaveTest {
         String mode = "prod_mode";
         String action = "deliver_local";
         String node_expecxted = "se";
+        String gitUrl = "https://gitlab-sdi101ml.france.echonet";
         String node ;
         List<String> nodeLists = Arrays.asList("sa","sa_tab","se", "se_api","se_tab");
         GlobalVars globalvars = mock(GlobalVars.class);
         when(globalvars.getListLabelSlaves()).thenReturn(nodeLists.toString());
-        when(globalvars.getSlave(mode, action)).thenCallRealMethod();
+        when(globalvars.getSlave(mode, action, gitUrl)).thenCallRealMethod();
 
         // WHEN (execute)
-        node = (String) globalvars.getSlave(mode, action);
+        node = (String) globalvars.getSlave(mode, action, gitUrl);
 //        System.out.println("node is :  "+node);
 
         // THEN ( verify)
@@ -217,5 +214,211 @@ public class GetSlaveTest {
 
     }
 
+
+
+
+
+
+    @Test
+    public void getSlaveTabWhenDeliverLocalActionWhenQualifAndDevEnv() {
+
+        //GIVEN
+
+        // prepare Get slave when deliver_local or deliver_oozie
+        String mode = "tab_mode";
+        String action = "deliver_local";
+        String node_expecxted = "se_tab";
+        String gitUrl = "https://gitlab-sdi101ml.dev.echonet";
+        String node ;
+        List<String> nodeLists = Arrays.asList("sa","sa_tab","se", "se_api","se_tab");
+        GlobalVars globalvars = mock(GlobalVars.class);
+        when(globalvars.getListLabelSlaves()).thenReturn(nodeLists.toString());
+        when(globalvars.getSlave(mode, action, gitUrl)).thenCallRealMethod();
+
+        // WHEN (execute)
+        node = (String) globalvars.getSlave(mode, action, gitUrl);
+//        System.out.println("node is :  "+node);
+
+        // THEN ( verify)
+//        assert node.equals(node_expecxted);
+
+    }
+
+    @Test
+    public void getSlaveTabWhenDeliverOozieActionWhenQualifAndDevEnv() {
+
+        //GIVEN
+
+        // prepare Get slave when deliver_local or deliver_oozie
+        String mode = "tab_mode";
+        String action = "deliver_oozie";
+        String node_expecxted = "se_tab";
+        String gitUrl = "https://gitlab-sdi101ml.dev.echonet";
+
+        String node ;
+        List<String> nodeLists = Arrays.asList("sa","sa_tab","se", "se_api","se_tab");
+        GlobalVars globalvars = mock(GlobalVars.class);
+        when(globalvars.getListLabelSlaves()).thenReturn(nodeLists.toString());
+        when(globalvars.getSlave(mode, action, gitUrl)).thenCallRealMethod();
+
+        // WHEN (execute)
+        node = (String) globalvars.getSlave(mode, action, gitUrl);
+//        System.out.println("node is :  "+node);
+
+        // THEN ( verify)
+        assert node.equals(node_expecxted);
+
+    }
+
+    @Test
+    public void getSlaveTabWhenDeliverApiActionWhenQualifAndDevEnv() {
+
+        //GIVEN
+
+        // prepare Get slave when deliver_local or deliver_oozie
+        String mode = "tab_mode";
+        String action = "deliver_api";
+        String node_expecxted = "se_tab";
+        String gitUrl = "https://gitlab-sdi101ml.dev.echonet";
+        String node ;
+        List<String> nodeLists = Arrays.asList("sa","sa_tab","se", "se_api","se_tab");
+        GlobalVars globalvars = mock(GlobalVars.class);
+        when(globalvars.getListLabelSlaves()).thenReturn(nodeLists.toString());
+        when(globalvars.getSlave(mode, action, gitUrl)).thenCallRealMethod();
+
+        // WHEN (execute)
+        node = (String) globalvars.getSlave(mode, action, gitUrl);
+//        System.out.println("node is :  "+node);
+
+        // THEN ( verify)
+        assert node.equals(node_expecxted);
+
+    }
+
+    @Test
+    public void getSlaveTabWhenPackageActionWhenQualifAndDevEnv() {
+
+        //GIVEN
+
+        // prepare Get slave when deliver_local or deliver_oozie
+        String mode = "tab_mode";
+        String action = "package";
+        String node_expecxted = "sa_tab";
+        String gitUrl = "https://gitlab-sdi101ml.dev.echonet";
+        String node ;
+        List<String> nodeLists = Arrays.asList("sa","sa_tab","se", "se_api","se_tab");
+        GlobalVars globalvars = mock(GlobalVars.class);
+        when(globalvars.getListLabelSlaves()).thenReturn(nodeLists.toString());
+        when(globalvars.getSlave(mode, action, gitUrl)).thenCallRealMethod();
+
+        // WHEN (execute)
+        node = (String) globalvars.getSlave(mode, action, gitUrl);
+//        System.out.println("node is :  "+node);
+
+        // THEN ( verify)
+        assert node.equals(node_expecxted);
+
+    }
+
+    @Test
+    public void getSlaveProdWhenPackageActionWhenQualifAndDevEnv() {
+
+        //GIVEN
+
+        // prepare Get slave when deliver_local or deliver_oozie
+        String mode = "prod_mode";
+        String action = "package";
+        String node_expecxted = "sa";
+        String node ;
+        String gitUrl = "https://gitlab-sdi101ml.dev.echonet";
+        List<String> nodeLists = Arrays.asList("sa","sa_tab","se", "se_api","se_tab");
+        GlobalVars globalvars = mock(GlobalVars.class);
+        when(globalvars.getListLabelSlaves()).thenReturn(nodeLists.toString());
+        when(globalvars.getSlave(mode, action, gitUrl)).thenCallRealMethod();
+
+
+        // WHEN (execute)
+        node = (String) globalvars.getSlave(mode, action, gitUrl);
+//        System.out.println("node is :  "+node);
+
+        // THEN ( verify)
+        assert node.equals(node_expecxted);
+
+    }
+
+    @Test
+    public void getSlaveProdWhenDeliverOozieActionWhenQualifAndDevEnv() {
+
+        //GIVEN
+
+        // prepare Get slave when deliver_local or deliver_oozie
+        String mode = "prod_mode";
+        String action = "deliver_oozie";
+        String node_expecxted = "se";
+        String gitUrl = "https://gitlab-sdi101ml.dev.echonet";
+        String node ;
+        List<String> nodeLists = Arrays.asList("sa","sa_tab","se", "se_api","se_tab");
+        GlobalVars globalvars = mock(GlobalVars.class);
+        when(globalvars.getListLabelSlaves()).thenReturn(nodeLists.toString());
+        when(globalvars.getSlave(mode, action, gitUrl)).thenCallRealMethod();
+
+        // WHEN (execute)
+        node = (String) globalvars.getSlave(mode, action, gitUrl);
+//        System.out.println("node is :  "+node);
+
+        // THEN ( verify)
+        assert node.equals(node_expecxted);
+
+    }
+
+    @Test
+    public void getSlaveProdWhenDeliverApiActionWhenQualifAndDevEnv() {
+
+        //GIVEN
+
+        // prepare Get slave when deliver_local or deliver_oozie
+        String mode = "prod_mode";
+        String action = "deliver_api";
+        String node_expecxted = "se";
+        String gitUrl = "https://gitlab-sdi101ml.dev.echonet";
+        String node ;
+        List<String> nodeLists = Arrays.asList("sa","sa_tab","se", "se_api","se_tab");
+        GlobalVars globalvars = mock(GlobalVars.class);
+        when(globalvars.getListLabelSlaves()).thenReturn(nodeLists.toString());
+        when(globalvars.getSlave(mode, action, gitUrl)).thenCallRealMethod();
+
+        // WHEN (execute)
+        node = (String) globalvars.getSlave(mode, action, gitUrl);
+//        System.out.println("node is :  "+node);
+
+        // THEN ( verify)
+        assert node.equals(node_expecxted);
+
+    }
+
+    @Test
+    public void getSlaveProdWhenDeliverLocalActionWhenQualifAndDevEnv() {
+
+        //GIVEN
+
+        // prepare Get slave when deliver_local or deliver_oozie
+        String mode = "prod_mode";
+        String action = "deliver_local";
+        String node_expecxted = "se";
+        String gitUrl = "https://gitlab-sdi101ml.dev.echonet";
+        String node ;
+        List<String> nodeLists = Arrays.asList("sa","sa_tab","se", "se_api","se_tab");
+        GlobalVars globalvars = mock(GlobalVars.class);
+        when(globalvars.getListLabelSlaves()).thenReturn(nodeLists.toString());
+        when(globalvars.getSlave(mode, action, gitUrl)).thenCallRealMethod();
+
+        // WHEN (execute)
+        node = (String) globalvars.getSlave(mode, action, gitUrl);
+        System.out.println("node is :  "+node);
+
+        // THEN ( verify)
+        assert node.equals(node_expecxted);
+
+    }
 
 }
