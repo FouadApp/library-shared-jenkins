@@ -1,6 +1,5 @@
 package com.bnp.piplines
 
-class GlobalVars {
 
     def getSlave(mode, action){
         //add code for this method
@@ -81,4 +80,3 @@ class GlobalVars {
 
     }
 
-}

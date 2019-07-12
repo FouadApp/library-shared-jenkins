@@ -86,6 +86,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>test</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -163,7 +168,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562920903727" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562921009993" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../pipline_library" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -188,7 +193,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GetSlaveTest.GetSlaveProdWhenDeliverLocalAction">
+  <component name="RunManager" selected="JUnit.GetSlaveTest">
+    <configuration name="GetSlaveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pipline_shared.dsflow-sherd-jenkins.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bnp.piplines.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bnp.piplines.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.bnp.piplines.tests.GetSlaveTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GetSlaveTest.GetSlaveProdWhenDeliverApiAction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Pipline_shared.dsflow-sherd-jenkins.test" />
       <extension name="coverage">
@@ -253,29 +273,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetSlaveTest.GetSlaveTabWhenPackageAction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Pipline_shared.dsflow-sherd-jenkins.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bnp.piplines.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bnp.piplines.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.bnp.piplines.tests.GetSlaveTest" />
-      <option name="METHOD_NAME" value="GetSlaveTabWhenPackageAction" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GetSlaveTest" />
         <item itemvalue="JUnit.GetSlaveTest.GetSlaveProdWhenDeliverLocalAction" />
         <item itemvalue="JUnit.GetSlaveTest.GetSlaveProdWhenDeliverApiAction" />
         <item itemvalue="JUnit.GetSlaveTest.GetSlaveProdWhenDeliverOozieAction" />
         <item itemvalue="JUnit.GetSlaveTest.GetSlaveProdWhenPackageAction" />
-        <item itemvalue="JUnit.GetSlaveTest.GetSlaveTabWhenPackageAction" />
       </list>
     </recent_temporary>
   </component>
