@@ -32,10 +32,9 @@ def call(String pipline) {
             println(" globalVars =====>"+ globalVars.getProperties().toString())
 
 
-
-//            def slave_labl = globalVars.getSlave(mode , action, gitUrl)
+            def slave_labl = globalVars.getSlave(mode , action, gitUrl)
 //
-//            println(" call =====>"+slave_labl)
+            println(" call =====>"+slave_labl)
 //            println(" scmUrl =====>"+scmUrl)
 
 
