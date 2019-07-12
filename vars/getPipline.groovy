@@ -22,7 +22,7 @@ def call(String pipline) {
 
 
         node('master') {
-            globalvars = new GlobalVars()
+            def globalvars = new GlobalVars()
             def mode = "${params.MODE}"
             def action = "${params.ACTION}"
             def slave_labl = globalvars.getSlave(mode, action)

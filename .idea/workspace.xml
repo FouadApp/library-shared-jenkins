@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="498a4604-8bae-4d4c-8ab0-039efcd5e006" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/bnp/piplines/GlobalVars.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/bnp/piplines/GlobalVars.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/bnp/piplines/tests/GetSlaveTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/bnp/piplines/tests/GetSlaveTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/bnp/piplines/GlobalVars.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/bnp/piplines/GlobalVars.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/bnp/piplines/tests/GetSlaveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bnp/piplines/tests/GetSlaveTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vars/getPipline.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/vars/getPipline.groovy" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -46,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/groovy/com/bnp/piplines/GlobalVars.groovy">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -55,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/bnp/piplines/tests/GetSlaveTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="412">
-              <caret line="212" column="46" lean-forward="true" selection-start-line="212" selection-start-column="24" selection-end-line="212" selection-end-column="46" />
+              <caret line="212" column="46" selection-start-line="212" selection-start-column="24" selection-end-line="212" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vars/getPipline.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="510">
+              <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -136,7 +132,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562919062501" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562919576171" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../pipline_library" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -262,6 +258,14 @@
       <option name="presentableId" value="Default" />
       <updated>1562848057289</updated>
     </task>
+    <task id="LOCAL-00001" summary="test first pipline">
+      <created>1562919332999</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562919332999</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -330,6 +334,10 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test first pipline" />
+    <option name="LAST_COMMIT_MESSAGE" value="test first pipline" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -355,14 +363,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/groovy/com/bnp/piplines/GlobalVars.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/bnp/piplines/tests/GetSlaveTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
-          <caret line="212" column="46" lean-forward="true" selection-start-line="212" selection-start-column="24" selection-end-line="212" selection-end-column="46" />
+          <caret line="212" column="46" selection-start-line="212" selection-start-column="24" selection-end-line="212" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -371,8 +379,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vars/getPipline.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="510">
+          <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
         </state>
       </provider>
     </entry>
