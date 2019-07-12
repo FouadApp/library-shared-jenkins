@@ -30,24 +30,24 @@ def call(String pipline) {
             def isProd = gitUrl.contains('france')
 
 
-            properties ([
-                    parameters([
-                             string(name: 'RUN_ID', description: 'get run_id of model'),
-                             choice(
-                                     choices: ['PACKAGE' , 'DELIVER_OOZIE', 'DELIVER_LOCAL', 'DELIVER_API' ],
-                                     description: '',
-                                     name: 'ACTION'
-                             ),
-
-                             choice(
-                                     choices: ['PROD_MODE' , 'TAB_MODE' ],
-                                     description: 'Choosing the  execution mode',
-                                     name: 'MODE'
-                             )
-
-
-                    ])
-            ])
+//            properties ([
+//                    parameters([
+//                             string(name: 'RUN_ID', description: 'get run_id of model'),
+//                             choice(
+//                                     choices: ['PACKAGE' , 'DELIVER_OOZIE', 'DELIVER_LOCAL', 'DELIVER_API' ],
+//                                     description: '',
+//                                     name: 'ACTION'
+//                             ),
+//
+//                             choice(
+//                                     choices: ['PROD_MODE' , 'TAB_MODE' ],
+//                                     description: 'Choosing the  execution mode',
+//                                     name: 'MODE'
+//                             )
+//
+//
+//                    ])
+//            ])
 
             println(" scmUrl =====>"+gitUrl)
 
