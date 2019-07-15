@@ -1,7 +1,7 @@
 import org.bnp.global.GlobalVars
 
-def call(String pipeline) {
-    if (pipeline == 'scoring') {
+def call(String pipe) {
+    if (pipe == 'scoring') {
 
         echo "The build specific for scoring"
         echo ".............Scoring ........."
