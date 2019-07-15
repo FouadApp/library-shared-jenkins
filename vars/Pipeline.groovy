@@ -207,7 +207,7 @@ def call(String pipeline) {
 
         currentBuild.result = 'ABORTED'
         echo('Error  cannot run this build ')
-        echo('you must choose name of pipeline in your JenkinsFile into your project')
+        echo('you must choose name of Pipeline in your JenkinsFile into your project')
         error('Aborting the build .....')
 
 
