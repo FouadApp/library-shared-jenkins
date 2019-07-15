@@ -28,7 +28,7 @@ def call(String pipline) {
             def gitUrl = scm.getUserRemoteConfigs()[0].getUrl()
 
 
-            def list_actions =  ['PACKAGE' , 'DELIVER_OOZIE', 'DELIVER_LOCAL', 'DELIVER_API' ]
+            def list_actions =  ['PACKAGE' , 'DELIVER_OOZIE', 'DELIVER_LOCAL', 'DELIVER_API' , 'balaba']
 
             properties ([
                     parameters([
