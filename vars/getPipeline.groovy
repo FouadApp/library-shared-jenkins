@@ -1,7 +1,7 @@
 import org.bnp.global.GlobalVars
 
-def call(String pipline) {
-    if (pipline == 'scoring') {
+def call(String pipeline) {
+    if (pipeline == 'scoring') {
         pipeline {
             agent any
             stages {
