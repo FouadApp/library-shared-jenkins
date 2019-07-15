@@ -2,10 +2,17 @@ import org.bnp.global.GlobalVars
 
 def call(String pipeline) {
     if (pipeline == 'scoring') {
-
-        echo "The build specific for scoring"
-        echo ".............Scoring ........."
-
+        pipeline {
+            agent any
+            stages {
+                stage('Scorng ....') {
+                    steps {
+                        echo "The build specific for scoring"
+                    }
+                }
+            }
+        }
+    } else {
         def RUN_ID
         def URL_GIT
         def ACTION
@@ -43,19 +50,26 @@ def call(String pipeline) {
 
             def isTab = mode.toString().toLowerCase().contains('tab')
             def isProd = gitUrl.contains('france')
+
             stage('check env ...') {
 
-                if (! isProd && isTab) {
-                    currentBuild.result = 'ABORTED'
-                    echo('Error  cannot execute TAB_MODE in environment  Dev or Qualif')
-                    echo('execute TAB_MODE available only environment  Prod')
-                    error('Aborting the build .....')
+                    if (! isProd && isTab) {
+                        currentBuild.result = 'ABORTED'
+                        echo('Error  cannot execute TAB_MODE in environment  Dev or Qualif')
+                        echo('execute TAB_MODE available only environment  Prod')
+                        error('Aborting the build .....')
+                    }
                 }
-            }
+
+
+
             def slave_labl = globalVars.getSlave(mode , action, gitUrl)
             SLAVE = slave_labl
             println(" call =====>"+slave_labl)
+
+
         }
+
 
         pipeline {
 
@@ -66,6 +80,8 @@ def call(String pipeline) {
 
                 }
             }
+
+
 
             stages {
 
@@ -85,6 +101,7 @@ def call(String pipeline) {
                         }
                     }
                 }
+
                 stage('get hot and port Git ') {
                     steps {
                         script{
@@ -98,6 +115,7 @@ def call(String pipeline) {
 
                     }
                 }
+
                 stage('remove old projects ') {
                     steps {
                         echo "dir : /${env.JOB_NAME} removed "
@@ -108,6 +126,9 @@ def call(String pipeline) {
                         echo "---host---->"+HOST
                     }
                 }
+
+
+
                 stage('create  ~/.git-credentials') {
                     steps {
 
@@ -124,6 +145,9 @@ def call(String pipeline) {
 
                     }
                 }
+
+
+
                 stage('INSTALL ENVIRONMENT') {
                     steps{
                         script{
@@ -154,6 +178,9 @@ def call(String pipeline) {
                         }
                     }
                 }
+
+
+
                 stage('BUILD') {
                     steps{
 
@@ -169,16 +196,21 @@ def call(String pipeline) {
 
             }
 
+
+
             post {
 
                 always {
 
                     echo "------------------------------- THE END ------------------------------"
                 }
+
+
                 failure {
                     echo 'failure:  Error when executing : thank you to consult the logs on Jenkins  '
 
                 }
+
                 success {
 
                     echo 'Build was a success'
@@ -201,17 +233,5 @@ def call(String pipeline) {
             }
 
         }
-
-    } else {
-
-
-        currentBuild.result = 'ABORTED'
-        echo('Error  cannot run this build ')
-        echo('you must choose name of pipeline in your JenkinsFile into your project')
-        error('Aborting the build .....')
-
-
-
-
     }
 }
