@@ -1,7 +1,7 @@
 import org.bnp.global.GlobalVars
 
-def call(String pipeline) {
-    if (pipeline == 'scoring') {
+def call(String pipline) {
+    if (pipline == 'scoring') {
         pipeline {
             agent any
             stages {
@@ -26,6 +26,8 @@ def call(String pipeline) {
             def mode = "${params.MODE}"
             def action = "${params.ACTION}"
             def gitUrl = scm.getUserRemoteConfigs()[0].getUrl()
+
+
             def list_actions =  ['PACKAGE' , 'DELIVER_OOZIE', 'DELIVER_LOCAL', 'DELIVER_API' ]
             def list_modes =  ['PROD_MODE' , 'TAB_MODE' ]
 
