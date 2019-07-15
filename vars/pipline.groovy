@@ -26,9 +26,8 @@ def call(String pipline) {
             def mode = "${params.MODE}"
             def action = "${params.ACTION}"
             def gitUrl = scm.getUserRemoteConfigs()[0].getUrl()
-
-
-            def list_actions =  ['PACKAGE' , 'DELIVER_OOZIE', 'DELIVER_LOCAL', 'DELIVER_API' , 'balaba']
+            def list_actions =  ['PACKAGE' , 'DELIVER_OOZIE', 'DELIVER_LOCAL', 'DELIVER_API' ]
+            def list_modes =  ['PROD_MODE' , 'TAB_MODE' ]
 
             properties ([
                     parameters([
@@ -41,7 +40,7 @@ def call(String pipline) {
                             ),
 
                             choice(
-                                    choices: ['PROD_MODE' , 'TAB_MODE' ],
+                                    choices: list_modes,
                                     description: 'Choosing the  execution mode',
                                     name: 'MODE'
                             )
