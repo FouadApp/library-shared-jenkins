@@ -1,0 +1,14 @@
+*.idea
+*.iml
+*.tgz
+credentials.yml
+.idea/deployment.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/platform_ds.iml
+.idea/vcs.xml
+.idea/workspace.xml
+.gradle
+gradel
+
+
