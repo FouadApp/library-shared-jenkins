@@ -52,9 +52,9 @@ def call(String pipe) {
                     error('Aborting the build .....')
                 }
             }
-            def slave_labl = globalVars.getSlave(mode , action, gitUrl)
-            SLAVE = slave_labl
-            println(" slave =====>"+slave_labl)
+            def slave_label = globalVars.getSlave(mode , action, gitUrl)
+            SLAVE = slave_label
+            println(" slave =====>"+slave_label)
         }
 
         pipeline {
@@ -196,7 +196,7 @@ def call(String pipe) {
                     }
 
                     //deleteDir()
-                    echo 'The build was done on the slave ==> '+SLAVE
+                    echo 'The build was done on the slave = ${env.NODE_NAME}'
                     echo 'Delete workspace  was a success'
                 }
             }
