@@ -54,7 +54,7 @@ def call(String pipe) {
             }
             def slave_labl = globalVars.getSlave(mode , action, gitUrl)
             SLAVE = slave_labl
-            println(" call =====>"+slave_labl)
+            println(" slave =====>"+slave_labl)
         }
 
         pipeline {
@@ -196,6 +196,7 @@ def call(String pipe) {
                     }
 
                     //deleteDir()
+                    echo 'The build was done on the slave ==> '+SLAVE
                     echo 'Delete workspace  was a success'
                 }
             }
@@ -203,14 +204,10 @@ def call(String pipe) {
         }
 
     } else {
-
-
         currentBuild.result = 'ABORTED'
         echo('Error  cannot run this build ')
         echo('you must choose name of myPipeline in your JenkinsFile into your project')
         error('Aborting the build .....')
-
-
 
 
     }
