@@ -52,24 +52,16 @@ def call(String pipline) {
             def isProd = gitUrl.contains('france')
             def autoCancelled = false
 
-            try {
-                stage('checkout') {
+            stage('checkout') {
 
                     if (! isProd && isTab) {
-                        autoCancelled = true
-                        error('Aborting the build to prevent a loop.')
+                        currentBuild.result = 'ABORTED'
+                        echo('Error  cannot execute TAB_MODE in environment  Dev or Qualif')
+                        echo('execute TAB_MODE available only environment  Prod')
+                        error('Aborting the build .....')
                     }
                 }
-            } catch (e) {
-                if (autoCancelled) {
-                    currentBuild.result = 'ABORTED'
-                    echo('Error  cannot execute TAB_MODE in environment  Dev or Qualif')
-                    echo('execute TAB_MODE available only environment  Prod')
-                    return
-                }
-                // normal error handling
-                throw e
-            }
+
 
 
             def slave_labl = globalVars.getSlave(mode , action, gitUrl)
