@@ -1,7 +1,7 @@
 import org.bnp.global.GlobalVars
 
-def call(String pipeline) {
-    if (pipeline == 'scoring') {
+def call(String pipe) {
+    if (pipe == 'scoring') {
 
         echo "The build specific for scoring"
         echo ".............Scoring ........."
@@ -207,7 +207,7 @@ def call(String pipeline) {
 
         currentBuild.result = 'ABORTED'
         echo('Error  cannot run this build ')
-        echo('you must choose name of Pipeline in your JenkinsFile into your project')
+        echo('you must choose name of pipeline in your JenkinsFile into your project')
         error('Aborting the build .....')
 
 
