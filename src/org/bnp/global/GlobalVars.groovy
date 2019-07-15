@@ -50,6 +50,9 @@ class GlobalVars {
 
             if (isDeliverLocal || isDeliverOozie) {
                 slave_label = node_se
+                if (! isProd){
+                    slave_label = node_se
+                }
 
             }
 
@@ -60,6 +63,9 @@ class GlobalVars {
 
             if (isDeliverApi) {
                 slave_label = node_se_api
+                if (! isProd){
+                    slave_label = node_se
+                }
 
             }
 

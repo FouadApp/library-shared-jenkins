@@ -21,20 +21,21 @@ def call(String pipline) {
         def UrlGitlab
         def SLAVE
 
-
-
         node('master') {
             globalVars = new GlobalVars()
             def mode = "${params.MODE}"
             def action = "${params.ACTION}"
             def gitUrl = scm.getUserRemoteConfigs()[0].getUrl()
 
+
+            def list_actions =  ['PACKAGE' , 'DELIVER_OOZIE', 'DELIVER_LOCAL', 'DELIVER_API' ]
+
             properties ([
                     parameters([
 
                             string(name: 'RUN_ID', description: 'get run_id of model'),
                             choice(
-                                    choices: ['PACKAGE' , 'DELIVER_OOZIE', 'DELIVER_LOCAL', 'DELIVER_API' ],
+                                    choices:list_actions,
                                     description: '',
                                     name: 'ACTION'
                             ),
@@ -50,9 +51,8 @@ def call(String pipline) {
 
             def isTab = mode.toString().toLowerCase().contains('tab')
             def isProd = gitUrl.contains('france')
-            def autoCancelled = false
 
-            stage('checkout') {
+            stage('check env ...') {
 
                     if (! isProd && isTab) {
                         currentBuild.result = 'ABORTED'
