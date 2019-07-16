@@ -106,7 +106,7 @@ public class GetSlaveTest {
 
         // WHEN (execute)
         node = (String) globalvars.getSlave(mode, action, gitUrl);
-//        System.out.println("node is :  "+node);
+        System.out.println("node is :  "+node);
 
         // THEN ( verify)
         assert node.equals(node_expecxted);

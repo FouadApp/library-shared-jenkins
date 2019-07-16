@@ -177,6 +177,7 @@ def call(String pipe) {
                 }
                 failure {
                     echo 'failure:  Error when executing : thank you to consult the logs on Jenkins  '
+                    deleteDir()
 
                 }
                 success {
@@ -195,7 +196,7 @@ def call(String pipe) {
                         }
                     }
 
-                    //deleteDir()
+                    deleteDir()
                     echo 'The build was done on the slave = ${env.NODE_NAME}'
                     echo 'Delete workspace  was a success'
                 }
