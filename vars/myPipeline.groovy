@@ -22,6 +22,7 @@ def call(String pipe) {
             def list_actions =  ['PACKAGE' , 'DELIVER_OOZIE', 'DELIVER_LOCAL', 'DELIVER_API' ]
             def list_modes =  ['PROD_MODE' , 'TAB_MODE' ]
 
+
             properties ([
                     parameters([
 
@@ -88,10 +89,17 @@ def call(String pipe) {
                 stage('get hot and port Git ') {
                     steps {
                         script{
+                            def isDev = gitUrl.contains('dev')
                             def url = new URL ("${env.GIT_URL}")
                             def host = url.host
+                            def port = url.port
                             HOST = host
-                            echo "result = "+host
+
+                            if (isDev){
+                                HOST = host+':'+port
+
+                            }
+                            echo "result = "+HOST
 
                         }
 
