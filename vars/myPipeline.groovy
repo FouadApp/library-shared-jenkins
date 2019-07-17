@@ -130,6 +130,7 @@ def call(String pipe) {
                             withCredentials([usernamePassword( credentialsId: 'jenkins-gitlab-credentials',usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
                                 sh 'git config credential.helper store'
                                 UrlGitlab = PRROTOCOLE+'://'+USERNAME+':'+PASSWORD+'@'+HOST
+                                echo 'urlgit ==>'+UrlGitlab
                                 env['ENV_UrlGitlab'] = UrlGitlab
                                 sh 'echo ${ENV_UrlGitlab}  > ~/.git-credentials'
 
