@@ -98,10 +98,12 @@ def call(String pipe) {
                             def host = url.host
                             def port = url.port
                             HOST = host
+                            UrlGitlab = 'https://'+USERNAME+':'+PASSWORD+'@'+HOST
+
 
                             if (ISDEV){
                                 HOST = host+':'+port
-
+                                UrlGitlab = 'http://'+USERNAME+':'+PASSWORD+'@'+HOST
                             }
                             echo "result = "+HOST
 
@@ -127,7 +129,6 @@ def call(String pipe) {
 
                             withCredentials([usernamePassword( credentialsId: 'jenkins-gitlab-credentials',usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
                                 sh 'git config credential.helper store'
-                                UrlGitlab = 'https://'+USERNAME+':'+PASSWORD+'@'+HOST
                                 env['ENV_UrlGitlab'] = UrlGitlab
                                 sh 'echo ${ENV_UrlGitlab}  > ~/.git-credentials'
 
