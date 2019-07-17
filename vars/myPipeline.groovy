@@ -7,6 +7,7 @@ def call(String pipe) {
         echo ".............Scoring ........."
 
         def RUN_ID
+        def NAME_EXPERIMENT
         def URL_GIT
         def ACTION
         def MODE
@@ -33,6 +34,7 @@ def call(String pipe) {
                     parameters([
 
                             string(name: 'RUN_ID', description: 'get run_id of model'),
+                            string(name: 'NAME_EXPERIMENT', description: 'get name_experiment of model'),
                             choice(
                                     choices:list_actions,
                                     description: '',
@@ -85,8 +87,7 @@ def call(String pipe) {
                             CLUSTER_NAME = "${params.CLUSTER_NAME}"
                             ACTION = "${params.ACTION }"
                             BRANCH = "${env.GIT_BRANCH}"
-
-
+                            NAME_EXPERIMENT = "${params.NAME_EXPERIMENT}"
 
                         }
                     }
@@ -177,7 +178,7 @@ def call(String pipe) {
                     steps{
 
                         script{
-                            def status = sh (returnStatus: true, script: "MODE="+MODE+" BRANCH="+BRANCH+" ACTION="+ACTION+" RUN_ID="+RUN_ID+" sh build.sh" )
+                            def status = sh (returnStatus: true, script: "MODE="+MODE+" BRANCH="+BRANCH+" ACTION="+ACTION+" RUN_ID="+RUN_ID+" NAME_EXPERIMENT="+NAME_EXPERIMENT+" sh build.sh" )
                             if (status != 0) {
                                 currentBuild.result = 'FAILURE'
                                 echo "RESULT: ${currentBuild.result}"
