@@ -141,7 +141,7 @@ def call(String pipe) {
 
                             }else{
                                 script{ echo "------------------ ${params.ACTION } -----------------------------------"
-                                    def status = sh (returnStatus: true, script: " source ~/.bash_profile && mkdir ./envs  && conda create -p ./envs/environment  pip -y  &&  source activate ./envs/environment && pip install  dsflow==1.0" )
+                                    def status = sh (returnStatus: true, script: " source ~/.bash_profile && mkdir ./envs  && conda env update -f conda.yaml  -p ./envs/environment " )
                                     if (status != 0) {
                                         currentBuild.result = 'FAILURE'
                                         echo "RESULT: ${currentBuild.result}"
