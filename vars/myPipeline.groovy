@@ -62,7 +62,7 @@ def call(String pipe) {
             }
             def slave_label = globalVars.getSlave(mode , action, gitUrl)
             SLAVE = slave_label
-            println(" slave =====>"+slave_label)
+            println(" slave label is : "+slave_label)
         }
 
         pipeline {
@@ -102,7 +102,6 @@ def call(String pipe) {
                             if (ISDEV){
                                 HOST = host+':'+port
                             }
-                            echo "result = "+HOST
 
                         }
 
@@ -111,12 +110,10 @@ def call(String pipe) {
                 }
                 stage('remove old projects ') {
                     steps {
-                        echo "dir : /${env.JOB_NAME} removed "
                         echo "${env.GIT_BRANCH}";
                         echo "${env.GIT_URL}"
                         echo "${env.NODE_NAME}"
                         echo "${env.JOB_NAME}"
-                        echo "---host---->"+HOST
                     }
                 }
                 stage('create  ~/.git-credentials') {
@@ -134,8 +131,6 @@ def call(String pipe) {
 
                                 }
 
-
-                                echo 'urlgit ==>'+UrlGitlab
                                 env['ENV_UrlGitlab'] = UrlGitlab
                                 sh 'echo ${ENV_UrlGitlab}  > ~/.git-credentials'
 
