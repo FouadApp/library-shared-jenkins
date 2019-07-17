@@ -191,7 +191,7 @@ def call(String pipe) {
                 }
                 failure {
                     echo 'failure:  Error when executing : thank you to consult the logs on Jenkins  '
-                    deleteDir()
+//                    deleteDir()
 
                 }
                 success {
