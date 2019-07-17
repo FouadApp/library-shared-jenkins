@@ -14,6 +14,7 @@ def call(String pipe) {
         def UrlGitlab
         def SLAVE
         def ISDEV
+        def PRROTOCOLE
 
         node('master') {
             globalVars = new GlobalVars()
@@ -98,12 +99,11 @@ def call(String pipe) {
                             def host = url.host
                             def port = url.port
                             HOST = host
-                            UrlGitlab = 'https://'+USERNAME+':'+PASSWORD+'@'+HOST
-
+                            PRROTOCOLE = 'https'
 
                             if (ISDEV){
                                 HOST = host+':'+port
-                                UrlGitlab = 'http://'+USERNAME+':'+PASSWORD+'@'+HOST
+                                PROTOCOLE = 'http'
                             }
                             echo "result = "+HOST
 
@@ -129,6 +129,7 @@ def call(String pipe) {
 
                             withCredentials([usernamePassword( credentialsId: 'jenkins-gitlab-credentials',usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
                                 sh 'git config credential.helper store'
+                                UrlGitlab = PRROTOCOLE+'://'+USERNAME+':'+PASSWORD+'@'+HOST
                                 env['ENV_UrlGitlab'] = UrlGitlab
                                 sh 'echo ${ENV_UrlGitlab}  > ~/.git-credentials'
 
