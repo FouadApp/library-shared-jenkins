@@ -124,7 +124,7 @@ def call(String pipe) {
                             withCredentials([usernamePassword( credentialsId: 'jenkins-gitlab-credentials',usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
                                 sh 'git config credential.helper store'
 
-                                UrlGitlab = 'http://'+USERNAME+':'+PASSWORD+'@'+HOST
+                                UrlGitlab = 'https://'+USERNAME+':'+PASSWORD+'@'+HOST
 
                                 if (ISDEV){
                                     UrlGitlab = 'http://'+USERNAME+':'+PASSWORD+'@'+HOST
