@@ -77,7 +77,7 @@ def call(String pipe) {
 
             stages {
 
-                stage('parametres') {
+                stage('Set parameters') {
                     steps {
                         script{
                             RUN_ID = "${params.RUN_ID}"
@@ -92,7 +92,7 @@ def call(String pipe) {
                         }
                     }
                 }
-                stage('get hot and port Git ') {
+                stage('Get url-git ') {
                     steps {
                         script{
                             def url = new URL ("${env.GIT_URL}")
@@ -108,15 +108,15 @@ def call(String pipe) {
 
                     }
                 }
-                stage('remove old projects ') {
-                    steps {
-                        echo "${env.GIT_BRANCH}";
-                        echo "${env.GIT_URL}"
-                        echo "${env.NODE_NAME}"
-                        echo "${env.JOB_NAME}"
-                    }
-                }
-                stage('create  ~/.git-credentials') {
+//                stage('remove old projects ') {
+//                    steps {
+//                        echo "${env.GIT_BRANCH}";
+//                        echo "${env.GIT_URL}"
+//                        echo "${env.NODE_NAME}"
+//                        echo "${env.JOB_NAME}"
+//                    }
+//                }
+                stage('Store git credentials') {
                     steps {
 
                         script{
@@ -139,7 +139,7 @@ def call(String pipe) {
 
                     }
                 }
-                stage('INSTALL ENVIRONMENT') {
+                stage('Install environment') {
                     steps{
                         script{
 
@@ -169,7 +169,7 @@ def call(String pipe) {
                         }
                     }
                 }
-                stage('BUILD') {
+                stage('Build') {
                     steps{
 
                         script{
