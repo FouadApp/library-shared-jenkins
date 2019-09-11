@@ -212,7 +212,7 @@ def call(String pipe) {
                     }
 
                     deleteDir()
-                    echo 'The build was done on the slave = ${env.NODE_NAME}'
+                    echo 'The build was done on the slave = '${env.NODE_NAME}
                     echo 'Delete workspace  was a success'
                 }
             }
