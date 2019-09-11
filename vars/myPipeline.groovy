@@ -15,6 +15,7 @@ def call(String pipe) {
         def UrlGitlab
         def SLAVE
         def ISDEV
+        def SERVER_NAME
 
         node('master') {
             globalVars = new GlobalVars()
@@ -88,6 +89,7 @@ def call(String pipe) {
                             ACTION = "${params.ACTION }"
                             BRANCH = "${env.GIT_BRANCH}"
                             NAME_EXPERIMENT = "${params.NAME_EXPERIMENT}"
+                            SERVER_NAME = "${env.NODE_NAME}"
 
                         }
                     }
@@ -212,7 +214,7 @@ def call(String pipe) {
                     }
 
                     deleteDir()
-                    echo 'The build was done on the slave = '${env.NODE_NAME}
+                    echo 'The build was done on the SERVER = '+SERVER_NAME
                     echo 'Delete workspace  was a success'
                 }
             }
