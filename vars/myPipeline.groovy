@@ -178,7 +178,6 @@ def call(String pipe) {
         }
 
     }
-
     else {
         currentBuild.result = 'ABORTED'
         echo('Error  cannot run this build ')
