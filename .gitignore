@@ -11,5 +11,6 @@ credentials.yml
 .gradle
 gradel
 build
+out
 
 
