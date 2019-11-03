@@ -1,9 +1,9 @@
-package org.bnp.global;
+package org.global;
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
-import org.bnp.global.GlobalVars;
+import org.global.GlobalVars;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 

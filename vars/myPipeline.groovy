@@ -1,4 +1,4 @@
-import org.bnp.global.GlobalVars
+import org.global.GlobalVars
 
 def call(String pipe) {
     if (pipe == 'my_pipeline_1') {

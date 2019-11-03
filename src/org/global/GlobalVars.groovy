@@ -1,4 +1,4 @@
-package org.bnp.global;
+package org.global;
 
 
 
