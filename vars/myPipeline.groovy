@@ -14,7 +14,7 @@ def call(String pipe) {
 
             agent {
                 node {
-                    label slave1
+                    label "slave1"
                     customWorkspace "${env.WORKSPACE}/${env.JOB_NAME}_${env.BUILD_ID}"
 
                 }
@@ -73,7 +73,7 @@ def call(String pipe) {
 
             agent {
                 node {
-                    label slave2
+                    label "slave2"
                     customWorkspace "${env.WORKSPACE}/${env.JOB_NAME}_${env.BUILD_ID}"
 
                 }
@@ -132,7 +132,7 @@ def call(String pipe) {
 
             agent {
                 node {
-                    label slave3
+                    label "slave3"
                     customWorkspace "${env.WORKSPACE}/${env.JOB_NAME}_${env.BUILD_ID}"
 
                 }
